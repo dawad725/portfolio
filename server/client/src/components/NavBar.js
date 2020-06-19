@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import { AppBar, Toolbar, Button, Grid } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,8 +18,11 @@ const useStyles = makeStyles((theme) => ({
     appBar: {
         backgroundColor: "white"
     },
-    right: {
-        position: "right"
+    buttonContainer: {
+        marginLeft: "auto",
+        [theme.breakpoints.only("xs")]: {
+            marginLeft: "1em"
+        }
     }
 }));
 
@@ -34,21 +36,22 @@ export default function Navbar() {
                 className={classes.appBar}
             >
                 <Toolbar>
-                    <Button variant="h6" >
-                        <Link to='/' className={classes.text}>
+                    <Grid container>
+                        <Button className={classes.text} href='/Home'>
                             Home
-                        </Link>
-                    </Button>
-                    <Button variant="h6" className={classes.right} >
-                        <Link to='/About' className={classes.text}>
-                            About
-                        </Link>
-                    </Button>
-                    <Button variant="h6" className={classes.right}>
-                        <Link to='/Contact' className={classes.text}>
-                            Contact
-                        </Link>
-                    </Button>
+                        </Button>
+                        <Grid item className={classes.buttonContainer}>
+                            <Button variant="h6" className={classes.text} href='/About'>
+                                About
+                        </Button>
+                            <Button variant="h6" className={classes.text} href='/Projects'>
+                                Projects
+                        </Button>
+                            <Button variant="h6" className={classes.text} href='/Contact'>
+                                Contact
+                        </Button>
+                        </Grid>
+                    </Grid>
                 </Toolbar>
             </AppBar>
         </div>
