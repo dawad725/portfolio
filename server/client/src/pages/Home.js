@@ -21,10 +21,10 @@ const useStyles = makeStyles(theme => ({
             marginTop: "5em"
         },
         [theme.breakpoints.only("sm")]: {
-            marginLeft: "4em",
+            marginLeft: "9em",
             width: "150px",
             height: "100px",
-            marginTop: "5em"
+            marginTop: "9em"
         },
     },
     image: {
@@ -35,12 +35,13 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         marginTop: "11em",
         [theme.breakpoints.only("xs")]: {
-            marginTop: "7em",
+            marginTop: "11em",
             fontSize: "10px"
         },
         [theme.breakpoints.only("sm")]: {
-            marginTop: "7em",
-            fontSize: "10px"
+            marginTop: "13em",
+            fontSize: "10px",
+
         },
     },
     buttonContainer: {
@@ -61,7 +62,7 @@ export default function Home() {
             <NavBar />
             <div className="fade-in">
                 <div className={classes.root}>
-                    <Grid container spacing={2}>
+                    <Grid container spacing={1}>
                         <Grid item xs={12} sm={6}>
                             <div className={classes.imageContainer}>
                                 <img className={classes.image} src={computer} alt="computer" />
