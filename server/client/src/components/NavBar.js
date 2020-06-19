@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold"
     },
     appBar: {
-        backgroundColor: "white"
+        backgroundColor: "white",
+        boxShadow: "none"
     },
     buttonContainer: {
         marginLeft: "auto",
@@ -32,7 +33,7 @@ export default function Navbar() {
     return (
         <div className={classes.root}>
             <AppBar
-                position="fixed"
+                position="static"
                 className={classes.appBar}
             >
                 <Toolbar>
