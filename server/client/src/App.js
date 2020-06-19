@@ -2,10 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./App.css"
 import Home from "./pages/Home"
-
-// import Today from "./pages/Today"
-// import Week from "./pages/Week"
-// import ErrorMessage from "./pages/ErrorMessage"
+// import About from "./pages/About"
+// import Projects from "./pages/Projects"
+// import Contact from "./pages/Contact"
 
 
 
@@ -17,6 +16,9 @@ function App() {
     <Router>
       <Switch>
         <Route path='/' exact component={Home} />
+        {/* <Route path='/About' exact component={About} />
+        <Route path='/Projects' exact component={Projects} />
+        <Route path='/Contact' exact component={Contact} /> */}
       </Switch>
     </Router>
   );

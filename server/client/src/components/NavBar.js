@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     buttonContainer: {
         marginLeft: "auto",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "1em"
+            marginLeft: "2em"
         }
     }
 }));
@@ -42,13 +42,13 @@ export default function Navbar() {
                             Home
                         </Button>
                         <Grid item className={classes.buttonContainer}>
-                            <Button variant="h6" className={classes.text} href='/About'>
+                            <Button className={classes.text} href='/About'>
                                 About
                         </Button>
-                            <Button variant="h6" className={classes.text} href='/Projects'>
+                            <Button className={classes.text} href='/Projects'>
                                 Projects
                         </Button>
-                            <Button variant="h6" className={classes.text} href='/Contact'>
+                            <Button className={classes.text} href='/Contact'>
                                 Contact
                         </Button>
                         </Grid>
