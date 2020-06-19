@@ -49,6 +49,9 @@ const useStyles = makeStyles(theme => ({
     },
     button: {
         // boxShadow: "0 0 5px blue, 0 0 10px blue, 0 0 10px blue"
+    },
+    container: {
+        marginTop: "3em"
     }
 }))
 
@@ -62,7 +65,7 @@ export default function Home() {
             <NavBar />
             <div className="fade-in">
                 <div className={classes.root}>
-                    <Grid container spacing={1}>
+                    <Grid container spacing={1} className={classes.container}>
                         <Grid item xs={12} sm={6}>
                             <div className={classes.imageContainer}>
                                 <img className={classes.image} src={computer} alt="computer" />
