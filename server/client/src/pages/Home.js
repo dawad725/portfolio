@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, Button } from '@material-ui/core';
 import NavBar from '../components/NavBar'
 
-import computer from "../images/computer.png"
+import computerImage from "../images/computer.png"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -68,7 +68,7 @@ export default function Home() {
                     <Grid container spacing={1} className={classes.container}>
                         <Grid item xs={12} sm={6}>
                             <div className={classes.imageContainer}>
-                                <img className={classes.image} src={computer} alt="computer" />
+                                <img className={classes.image} src={computerImage} alt="computer" />
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>

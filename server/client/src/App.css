@@ -50,3 +50,20 @@
     opacity:1;
   }
 }
+
+.polaroid {
+  padding-top: 25px;
+  width: 350px;
+  height: 275px;
+  background: #FFF;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  transform: rotate(-3deg);
+}
+
+.polaroid img{
+  display: block;
+  margin: auto;
+  width: 85%;
+  border: 1.5px rgb(177, 173, 173) solid;
+  /* filter: grayscale(100%); */
+}
