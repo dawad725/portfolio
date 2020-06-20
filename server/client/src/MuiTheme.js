@@ -1,6 +1,5 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 // import "typeface-roboto";
-// import backgroundImage from "./images/blue_sky.jpg"
 
 const theme = createMuiTheme({
     // typography: {

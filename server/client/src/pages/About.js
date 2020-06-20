@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Grid, Button } from '@material-ui/core';
+import { Typography, Grid, Chip } from '@material-ui/core';
 import NavBar from '../components/NavBar'
 
 import dave from '../images/dave.png'
@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1
     },
-    title: {
+    pageBanner: {
         textAlign: "center",
         marginTop: "2.5em"
     },
@@ -22,6 +22,44 @@ const useStyles = makeStyles(theme => ({
             width: "50 %",
             padding: "10px"
         },
+    },
+    textContainer: {
+        textAlign: "center",
+        marginTop: "5em",
+        paddingRight: "10px",
+        paddingLeft: "10px"
+    },
+    text: {
+        fontSize: "16px",
+        marginBottom: "1em"
+    },
+    title: {
+        textAlign: "center",
+        fontSize: "20px",
+        marginBottom: "1em"
+    },
+
+    skillsContainer: {
+        marginTop: "2em",
+        marginLeft: "18em",
+        [theme.breakpoints.only("xs")]: {
+            marginLeft: "0"
+
+        },
+    },
+    chip: {
+        marginRight: ".5em",
+        [theme.breakpoints.only("xs")]: {
+            marginBottom: "1em"
+        },
+    },
+    stackTitle: {
+        fontSize: "20px",
+        marginBottom: "1em",
+        marginLeft: "9em"
+    },
+    chipContainer: {
+        marginBottom: "1em"
     }
 
 }))
@@ -36,20 +74,66 @@ export default function About() {
             <NavBar />
 
             <div className={classes.root}>
-                <Grid spacing={3} container>
+                <Grid spacing={1} container>
                     <Grid item xs={12}>
-                        <div className={classes.title}>
+                        <div className={classes.pageBanner}>
                             <Typography variant="h3">
                                 About me
                         </Typography>
                         </div>
                     </Grid>
 
-                    <Grid item xs={6} sm={12}>
+                    <Grid item xs={12} sm={6}>
                         <div className={classes.picture}>
                             <div className="polaroid">
                                 <img src={dave} alt='dave' />
-                                <p>I take the worst pictures</p>
+                                <p>not photogenic...</p>
+                            </div>
+                        </div>
+                    </Grid>
+
+                    <Grid item xs={12} sm={6}>
+                        <div className={classes.textContainer}>
+                            <Typography className={classes.text}>
+                                My name's Dave, and I'm a Full Stack Software Developer based in Durham, NC
+                            </Typography>
+                            <Typography className={classes.text}>
+                                I'm always striving to learn and take on new challenges.
+                            </Typography>
+                        </div>
+                    </Grid>
+
+                    <Grid item xs={12}>
+                        <div className={classes.skillsContainer}>
+                            <Typography variant="h3" className={classes.stackTitle}>
+                                Tech stack
+                            </Typography>
+                            <div className={classes.chipContainer}>
+                                <Chip className={classes.chip} label="JavaScript" style={{ backgroundColor: '#f50057', color: 'white' }} />
+                                <Chip className={classes.chip} label="React" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
+                                <Chip className={classes.chip} label="Redux" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
+                                <Chip className={classes.chip} label="Backbone" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
+                                <Chip className={classes.chip} label="jQuery" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
+                                <Chip className={classes.chip} label="HTML" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
+                                <Chip className={classes.chip} label="CSS" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
+                            </div>
+                            <div className={classes.chipContainer}>
+                                <Chip className={classes.chip} label="Node.js" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
+                                <Chip className={classes.chip} label="Express" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
+                                <Chip className={classes.chip} label="Passport" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
+                                <Chip className={classes.chip} label="MongoDB" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
+                                <Chip className={classes.chip} label="SQL" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
+                                <Chip className={classes.chip} label="Mocha" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
+                                <Chip className={classes.chip} label="Chai HTTP" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
+                            </div>
+                            <div className={classes.chipContainer}>
+                                <Chip className={classes.chip} label="Material UI" style={{ backgroundColor: 'orange', color: 'white' }} />
+                                <Chip className={classes.chip} label="Bootstrap" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
+                                <Chip className={classes.chip} label="Git" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
+                                <Chip className={classes.chip} label="Github" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
+                                <Chip className={classes.chip} label="Visual Studio IDE" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
+                                <Chip className={classes.chip} label="Postman" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
+                                <Chip className={classes.chip} label="Swagger" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
                             </div>
                         </div>
                     </Grid>

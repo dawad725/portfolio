@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Grid } from '@material-ui/core';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1
@@ -21,9 +20,6 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonContainer: {
         marginLeft: "auto",
-        [theme.breakpoints.only("xs")]: {
-            marginLeft: "2em"
-        }
     }
 }));
 
@@ -38,20 +34,24 @@ export default function Navbar() {
             >
                 <Toolbar>
                     <Grid container>
-                        <Button className={classes.text} href='/Home'>
-                            Home
-                        </Button>
+                        <Grid item className={classes.home}>
+                            <Button className={classes.text} href='/'>
+                                Home
+                            </Button>
+                        </Grid>
+
                         <Grid item className={classes.buttonContainer}>
                             <Button className={classes.text} href='/About'>
                                 About
-                        </Button>
+                            </Button>
                             <Button className={classes.text} href='/Projects'>
                                 Projects
-                        </Button>
+                            </Button>
                             <Button className={classes.text} href='/Contact'>
                                 Contact
-                        </Button>
+                            </Button>
                         </Grid>
+
                     </Grid>
                 </Toolbar>
             </AppBar>
