@@ -12,11 +12,16 @@ const useStyles = makeStyles(theme => ({
     },
     title: {
         textAlign: "center",
-        marginTop: "3em"
+        marginTop: "2.5em"
     },
     picture: {
         marginLeft: "4em",
-        marginTop: "4em"
+        marginTop: "5em",
+        [theme.breakpoints.only("xs")]: {
+            margin: "auto",
+            width: "50 %",
+            padding: "10px"
+        },
     }
 
 }))
@@ -44,10 +49,11 @@ export default function About() {
                         <div className={classes.picture}>
                             <div className="polaroid">
                                 <img src={dave} alt='dave' />
-                                {/* <p>I take the worst pictures</p> */}
+                                <p>I take the worst pictures</p>
                             </div>
                         </div>
                     </Grid>
+
                 </Grid>
             </div>
         </>

@@ -67,3 +67,7 @@
   border: 1.5px rgb(177, 173, 173) solid;
   /* filter: grayscale(100%); */
 }
+
+.polaroid p {
+  margin-left: 6em;
+}
