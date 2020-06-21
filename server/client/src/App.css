@@ -70,6 +70,7 @@
 
 .polaroid p {
   margin-left: 8em;
+  padding-top: 2em;
 }
 
 .card-deck {
@@ -79,5 +80,5 @@
 .card-links {
   display: flex;
   justify-content: space-around;
-  
+
 }

@@ -56,7 +56,7 @@ export default function Projects() {
                         stack={'React | Material UI | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
                     />
                     <Project title={"Medline.io"} image={Medline} border={'dark'} bg={'light'} href_app={'https://www.medline.io/'}
-                        text={"This is a platform that I'm currently volunteering on with a remote team to match medical supply companies to fronline workers in need of PPE while fighting the COVID-19 pandemic."}
+                        text={"This is a platform that I'm currently volunteering on with a remote team to match medical supply companies to frontline workers in need of PPE while fighting the COVID-19 pandemic."}
                         stack={'React | Material UI | Heroku'} href_code={'https://github.com/ComeTiss/medline-frontend'}
                     />
 
