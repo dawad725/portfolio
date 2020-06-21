@@ -27,11 +27,19 @@ const useStyles = makeStyles(theme => ({
         marginTop: "8em",
         paddingRight: "10px",
         paddingLeft: "10px",
-        marginRight: "10px"
+        marginRight: "10px",
+        [theme.breakpoints.only("xs")]: {
+            marginTop: "3em",
+            marginLeft: "3em",
+            padding: "0"
+        },
     },
     text: {
         fontSize: "16px",
-        marginBottom: "1em"
+        marginBottom: "1em",
+        [theme.breakpoints.only("xs")]: {
+            textAlign: "center",
+        },
     },
     title: {
         textAlign: "center",
@@ -51,7 +59,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         marginRight: "4em",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "0",
+            marginLeft: "4em",
             textAlign: "center"
         },
 
