@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     },
     picture: {
         marginLeft: "4em",
-        marginTop: "5em",
+        marginTop: "8em",
         [theme.breakpoints.only("xs")]: {
             margin: "auto",
             width: "50 %",
@@ -24,8 +24,7 @@ const useStyles = makeStyles(theme => ({
         },
     },
     textContainer: {
-        textAlign: "center",
-        marginTop: "5em",
+        marginTop: "8em",
         paddingRight: "10px",
         paddingLeft: "10px"
     },
@@ -41,7 +40,8 @@ const useStyles = makeStyles(theme => ({
 
     skillsContainer: {
         marginTop: "2em",
-        marginLeft: "18em",
+        alignItems: "center",
+        marginLeft: "3em",
         [theme.breakpoints.only("xs")]: {
             marginLeft: "0"
 
@@ -49,6 +49,7 @@ const useStyles = makeStyles(theme => ({
     },
     chip: {
         marginRight: ".5em",
+        marginBottom: "1em",
         [theme.breakpoints.only("xs")]: {
             marginBottom: "1em"
         },
@@ -56,7 +57,13 @@ const useStyles = makeStyles(theme => ({
     stackTitle: {
         fontSize: "20px",
         marginBottom: "1em",
-        marginLeft: "9em"
+        textAlign: "center",
+        marginRight: "4em",
+        [theme.breakpoints.only("xs")]: {
+            marginLeft: "0",
+            textAlign: "center"
+        },
+
     },
     chipContainer: {
         marginBottom: "1em"
@@ -100,11 +107,8 @@ export default function About() {
                             <Typography className={classes.text}>
                                 I'm always striving to learn and take on new challenges.
                             </Typography>
-                        </div>
-                    </Grid>
-
-                    <Grid item xs={12}>
-                        <div className={classes.skillsContainer}>
+                            {/* </div>
+                        <div className={classes.skillsContainer}> */}
                             <Typography variant="h3" className={classes.stackTitle}>
                                 Tech stack
                             </Typography>
