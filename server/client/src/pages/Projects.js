@@ -52,7 +52,7 @@ export default function Projects() {
                         stack={'React | Redux | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
                     />
                     <Project title={"Dave's Weather Station"} image={WeatherApp} border={'success'} bg={'light'} href_app={'https://daves-weather-station.herokuapp.com/'}
-                        text={"This app allows a user to check the weather and get the five day forecast."}
+                        text={"This fun app allows a user to check the weather by zip code or city. It also gives you the option to see the five day forecast for that area."}
                         stack={'React | Material UI | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
                     />
                     <Project title={"Medline.io"} image={Medline} border={'success'} bg={'light'} href_app={'https://www.medline.io/'}
