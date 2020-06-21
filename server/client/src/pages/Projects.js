@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Grid } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import NavBar from '../components/NavBar'
 import Project from '../components/Project';
 import CardDeck from 'react-bootstrap/CardDeck';
@@ -8,6 +8,7 @@ import CardDeck from 'react-bootstrap/CardDeck';
 
 import illuminate from '../images/illuminate.png'
 import WeatherApp from '../images/WeatherApp.png'
+import Portfolio from '../images/Portfolio.png'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -53,9 +54,24 @@ export default function Projects() {
                         text={"This app allows a user to check the weather and get the five day forecast."}
                         stack={'React | Material UI | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
                     />
+                    <Project title={"My Portfolio Site"} image={Portfolio} border={'success'} bg={'light'} href_app={null}
+                        text={"I spent a lot of time on this very site so you can check out the kind of Software Engineer I am. Please let me know what you think : )"}
+                        stack={'React | Material UI | React Bootstrap | Heroku'} href_code={'https://github.com/dawad725/portfolio'}
+                    />
+                </CardDeck>
+
+                <CardDeck className={classes.cards}>
                     <Project title={"illuminate"} image={illuminate} border={'success'} bg={'light'} href_app={'https://illuminate-app.herokuapp.com/'}
                         text={'Illuminate helps consumers understand the approximate savings potential they will see by upgrading their current lighting in their home to energy efficient LED lighting.'}
                         stack={'React | Redux | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
+                    />
+                    <Project title={"Dave's Weather Station"} image={WeatherApp} border={'success'} bg={'light'} href_app={'https://daves-weather-station.herokuapp.com/'}
+                        text={"This app allows a user to check the weather and get the five day forecast."}
+                        stack={'React | Material UI | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
+                    />
+                    <Project title={"My Portfolio Site"} image={Portfolio} border={'success'} bg={'light'} href_app={null}
+                        text={"I spent a lot of time on this very site so you can check out the kind of Software Engineer I am. Please let me know what you think : )"}
+                        stack={'React | Material UI | React Bootstrap | Heroku'} href_code={'https://github.com/dawad725/portfolio'}
                     />
                 </CardDeck>
 
