@@ -1,12 +1,12 @@
 import React from "react"
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { Card, Button } from 'react-bootstrap/';
+import "../App.css"
 
 
 export default function Project({ border, bg, title, text, image, href_app, href_code, stack }) {
     const appLink = () => {
         if (href_app !== null) {
-            return <Button variant={border} href={href_app} target="_blank">See the app!</Button>
+            return <Button variant={border} target="_blank" href={href_app}>See the app!</Button>
         } else {
             return null
         }
@@ -18,11 +18,9 @@ export default function Project({ border, bg, title, text, image, href_app, href
             </Card.Header>
             <Card.Img variant="top" src={image} />
             <Card.Body>
-                <Card.Text>
-                    <div style={{ color: 'grey' }}>{stack}</div><br />
-                    {text}
-                </Card.Text>
-                <div class="card-links">
+                <Card.Text style={{ color: 'grey' }}>{stack}</Card.Text><br />
+                <Card.Text>{text}</Card.Text>
+                <div className="card-links">
                     {appLink()}
                     <Button variant={border} href={href_code} target="_blank">See the code!</Button>
                 </div>

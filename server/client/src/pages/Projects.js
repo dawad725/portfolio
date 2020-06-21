@@ -6,13 +6,23 @@ import Project from '../components/Project';
 import CardDeck from 'react-bootstrap/CardDeck';
 
 
+import illuminate from '../images/illuminate.png'
+import WeatherApp from '../images/WeatherApp.png'
+
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
     },
     pageBanner: {
         textAlign: "center",
-        marginTop: "2.5em"
+        marginTop: "2.5em",
+        marginBottom: "3em"
+    },
+    cards: {
+        marginBottom: "1em",
+        [theme.breakpoints.only("xs")]: {
+            marginLeft: "3em"
+        },
     }
 }))
 
@@ -25,19 +35,31 @@ export default function Projects() {
         <>
             <NavBar />
             <div className={classes.root}>
-                <Grid spacing={1} container>
-                    <Grid item xs={12}>
-                        <div className={classes.pageBanner}>
-                            <Typography variant="h3">
-                                Projects
-                            </Typography>
-                        </div>
-                    </Grid>
 
-                    <Grid item xs={12} sm={6}>
+                <div className={classes.pageBanner}>
+                    <Typography variant="h3">
+                        Projects
+                    </Typography>
+                </div>
 
-                    </Grid>
-                </Grid>
+
+
+                <CardDeck className={classes.cards}>
+                    <Project title={"illuminate"} image={illuminate} border={'success'} bg={'light'} href_app={'https://illuminate-app.herokuapp.com/'}
+                        text={'Illuminate helps consumers understand the approximate savings potential they will see by upgrading their current lighting in their home to energy efficient LED lighting.'}
+                        stack={'React | Redux | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
+                    />
+                    <Project title={"Dave's Weather Station"} image={WeatherApp} border={'success'} bg={'light'} href_app={'https://daves-weather-station.herokuapp.com/'}
+                        text={"This app allows a user to check the weather and get the five day forecast."}
+                        stack={'React | Material UI | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
+                    />
+                    <Project title={"illuminate"} image={illuminate} border={'success'} bg={'light'} href_app={'https://illuminate-app.herokuapp.com/'}
+                        text={'Illuminate helps consumers understand the approximate savings potential they will see by upgrading their current lighting in their home to energy efficient LED lighting.'}
+                        stack={'React | Redux | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
+                    />
+                </CardDeck>
+
+
             </div>
 
         </>

@@ -71,3 +71,12 @@
 .polaroid p {
   margin-left: 8em;
 }
+
+.card-deck {
+  margin: auto;
+}
+
+.card-links {
+  display: flex;
+  justify-content: space-around;
+}
