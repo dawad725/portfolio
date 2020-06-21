@@ -60,7 +60,7 @@ export default function Projects() {
                     />
                 </CardDeck>
 
-                <CardDeck className={classes.cards}>
+                {/* <CardDeck className={classes.cards}>
                     <Project title={"illuminate"} image={illuminate} border={'success'} bg={'light'} href_app={'https://illuminate-app.herokuapp.com/'}
                         text={'Illuminate helps consumers understand the approximate savings potential they will see by upgrading their current lighting in their home to energy efficient LED lighting.'}
                         stack={'React | Redux | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
@@ -73,7 +73,7 @@ export default function Projects() {
                         text={"I spent a lot of time on this very site so you can check out the kind of Software Engineer I am. Please let me know what you think : )"}
                         stack={'React | Material UI | React Bootstrap | Heroku'} href_code={'https://github.com/dawad725/portfolio'}
                     />
-                </CardDeck>
+                </CardDeck> */}
 
 
             </div>
