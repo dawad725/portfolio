@@ -132,7 +132,7 @@ export default function About() {
                                 <Chip className={classes.chip} label="Bootstrap" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
                                 <Chip className={classes.chip} label="Git" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
                                 <Chip className={classes.chip} label="Github" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
-                                <Chip className={classes.chip} label="Visual Studio IDE" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
+                                <Chip className={classes.chip} label="VS Code" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
                                 <Chip className={classes.chip} label="Postman" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
                                 <Chip className={classes.chip} label="Swagger" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
                             </div>
