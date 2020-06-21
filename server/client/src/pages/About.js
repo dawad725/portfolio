@@ -8,7 +8,7 @@ import dave from '../images/dave.png'
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
     },
     pageBanner: {
         textAlign: "center",
@@ -23,10 +23,11 @@ const useStyles = makeStyles(theme => ({
             padding: "10px"
         },
     },
-    textContainer: {
+    container: {
         marginTop: "8em",
         paddingRight: "10px",
-        paddingLeft: "10px"
+        paddingLeft: "10px",
+        marginRight: "10px"
     },
     text: {
         fontSize: "16px",
@@ -36,16 +37,6 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         fontSize: "20px",
         marginBottom: "1em"
-    },
-
-    skillsContainer: {
-        marginTop: "2em",
-        alignItems: "center",
-        marginLeft: "3em",
-        [theme.breakpoints.only("xs")]: {
-            marginLeft: "0"
-
-        },
     },
     chip: {
         marginRight: ".5em",
@@ -100,15 +91,13 @@ export default function About() {
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <div className={classes.textContainer}>
+                        <div className={classes.container}>
                             <Typography className={classes.text}>
                                 My name's Dave, and I'm a Full Stack Software Developer based in Durham, NC
                             </Typography>
                             <Typography className={classes.text}>
                                 I'm always striving to learn and take on new challenges.
                             </Typography>
-                            {/* </div>
-                        <div className={classes.skillsContainer}> */}
                             <Typography variant="h3" className={classes.stackTitle}>
                                 Tech stack
                             </Typography>
