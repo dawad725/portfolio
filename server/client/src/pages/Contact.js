@@ -4,7 +4,8 @@ import { Typography, Grid, TextField, Button } from '@material-ui/core';
 import NavBar from '../components/NavBar'
 import emailjs from 'emailjs-com';
 
-
+import linkedin from '../images/linkedin.png'
+import github from '../images/github.png'
 
 
 const useStyles = makeStyles(theme => ({
@@ -24,7 +25,6 @@ const useStyles = makeStyles(theme => ({
             padding: "1em",
 
         },
-
 
     },
     textField: {
@@ -47,7 +47,20 @@ const useStyles = makeStyles(theme => ({
     labels: {
         float: "left",
         color: "white"
+    },
+
+    imageContainer: {
+        height: "50px",
+        width: "50px",
+        marginBottom: "3em",
+        marginLeft: "5em"
+    },
+
+    image: {
+        width: "100%",
+        height: "auto"
     }
+
 
 }))
 
@@ -73,7 +86,8 @@ export default function Contact() {
         setValues({ ...values, [name]: value })
     }
 
-    const addItem = () => {
+    const addItem = (e) => {
+        e.preventDefault();
         const { name, email, message } = values
 
         if (!name || !email || !message) return
@@ -87,7 +101,6 @@ export default function Contact() {
 
 
     const [values, setValues] = useState(initialState)
-    // console.log("values", values)
 
     function sendEmail(values) {
         const service_id = "default_service";
@@ -102,7 +115,6 @@ export default function Contact() {
             message: values.message
         }
 
-        // console.log("checking ", template_params)
         emailjs.send(service_id, template_id, template_params, user_id)
             .then((response) => {
                 console.log(response.status, response.text);
@@ -126,9 +138,22 @@ export default function Contact() {
                     </Typography>
                 </div>
 
+                <Grid spacing={3} container className={classes.iconContainer}>
+                    <Grid item sm={3}>
+                        <div className={classes.imageContainer}>
+                            <a href="https://www.linkedin.com/in/david-awad/" target="_blank"><img className={classes.image} src={linkedin} alt='linkedin' /></a>
+                        </div>
+                    </Grid>
+                    <Grid item sm={3}>
+                        <div className={classes.imageContainer}>
+                            <a href="https://github.com/dawad725" target="_blank"><img className={classes.image} src={github} alt='github' /></a>
+                        </div>
+                    </Grid>
+                </Grid>
+
                 <div className={classes.container}>
                     <form onSubmit={addItem}>
-                        <Grid spacing={1} container className={classes.formContainer}  >
+                        <Grid spacing={1} container className={classes.formContainer}>
                             <Grid item xs={12} sm={6}>
                                 <label className={classes.labels}>Name</label>
                                 <TextField

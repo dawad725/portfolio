@@ -82,3 +82,7 @@
   justify-content: space-around;
 
 }
+
+.iconsContainer img {
+  width: 50px;
+}
