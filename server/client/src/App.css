@@ -1,0 +1,117 @@
+body, html {
+        background: url('./images/shimmer.jpg')no-repeat center center fixed;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+}     
+
+.fade-in {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.polaroid {
+  padding-top: 25px;
+  background: #FFF;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  transform: rotate(-3deg);
+}
+
+.polaroid img{
+  display: block;
+  margin: auto;
+  width: 85%;
+  border: 2px rgb(177, 173, 173) solid;
+  /* filter: grayscale(100%); */
+}
+
+.polaroid p {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card-deck {
+  margin: auto;
+}
+
+.card-links {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+@media screen and (max-height: 812px) {
+    .MuiToolbar-gutters {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+
+@media (max-width: 599.95px) and (min-width: 0px) {
+  .carddeck {
+      padding-right: 10% !important;
+     
+  }
+  .card-deck{
+  padding-right: 10% !important;
+  }
+}
+
+@media (max-width: 599.95px) and (min-width: 0px) {
+  .makeStyles-textField-4 {
+    width: 100% !important;
+  }
+}
