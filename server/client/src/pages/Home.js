@@ -66,13 +66,11 @@ export default function Home() {
             <div className="fade-in">
                 <div className={classes.root}>
                     <Grid container spacing={1} className={classes.container}>
-
                         <Grid item xs={12} sm={6}>
                             <div className={classes.imageContainer}>
                                 <img className={classes.image} src={computerImage} alt="computer" />
                             </div>
                         </Grid>
-
                         <Grid item xs={12} sm={6}>
                             <div className={classes.title}>
                                 <Typography variant="h2">
