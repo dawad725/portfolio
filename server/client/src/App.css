@@ -114,17 +114,13 @@ body, html {
   .makeStyles-textField-4 {
     width: 100% !important;
   }
-}
-@media (max-width: 415px) and (min-width: 376px) {
-  .makeStyles-image-3 {
-    padding-left: 3rem !important;
-  }
-}
-@media (max-width: 320px) and (min-width: 0px) {
-  .makeStyles-image-3 {
-    padding-right: 3rem !important;
+  .makeStyles-imageContainer-2 {
+    margin: 0 auto !important;
   }
 
+}
+
+@media (max-width: 320px) and (min-width: 0px) {
   .makeStyles-buttonContainer-5 {
     padding-bottom: 6rem !important;
   }

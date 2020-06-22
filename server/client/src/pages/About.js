@@ -141,11 +141,11 @@ export default function About() {
                         <Grid item xs={12} sm={6}>
                             <div className={classes.container}>
                                 <Typography className={classes.text}>
-                                    My name's Dave, and I'm a Full Stack Software Developer based in Durham, NC.
-                                    I would consider myself a foodie, coffee lover, a traveler, and someone that always has a general curiousity for how things work.
+                                    My name's Dave, and I'm a Full Stack Software Engineer based in Durham, North Carolina.
+                                    I would consider myself a foodie, coffee lover, traveler, and someone that always has a general curiousity for how things work.
                             </Typography>
                                 <Typography className={classes.text}>
-                                    I'm always striving to learn and take on new challenges. I love using code to help others
+                                    I'm exced
                             </Typography>
                                 <Typography variant="h3" className={classes.stackTitle}>
                                     Tech stack
