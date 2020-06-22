@@ -4,13 +4,6 @@ import { Typography, Grid, TextField, Button } from '@material-ui/core';
 import NavBar from '../components/NavBar'
 import emailjs from 'emailjs-com';
 
-// import linkedin from '../images/linkedin.png'
-// import linkedin from '../images/linkedin2.png'
-// import github from '../images/github.png'
-// import resumeIcon from '../images/resume.png'
-// import home from '../images/home.png'
-
-// import resume from "../resume/resume.pdf"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -31,6 +24,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         backgroundColor: "#cc4b37",
         padding: "3em",
+        marginTop: "5em",
         [theme.breakpoints.only("xs")]: {
             padding: "1em",
             marginTop: "2em"
@@ -94,9 +88,10 @@ const useStyles = makeStyles(theme => ({
 
     text: {
         fontSize: "30px",
-        marginLeft: "4em",
+        marginLeft: "2.5em",
         marginBottom: "1em",
         color: "#233768",
+        textAlign: " left",
         [theme.breakpoints.only("xs")]: {
             marginLeft: "3em",
             fontSize: "20px"
