@@ -15,6 +15,12 @@ import resume from "../resume/resume.pdf"
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
+        [theme.breakpoints.only("xs")]: {
+            paddingBottom: "3em",
+
+
+
+        },
     },
     pageBanner: {
         textAlign: "center",
@@ -27,6 +33,7 @@ const useStyles = makeStyles(theme => ({
         padding: "3em",
         [theme.breakpoints.only("xs")]: {
             padding: "1em",
+            marginTop: "2em"
 
         },
 
@@ -57,7 +64,10 @@ const useStyles = makeStyles(theme => ({
         height: "50px",
         width: "50px",
         marginBottom: "3em",
-        marginLeft: "5em"
+        marginLeft: "7em",
+        [theme.breakpoints.only("xs")]: {
+            marginLeft: "5em"
+        },
     },
 
     image: {
@@ -69,7 +79,7 @@ const useStyles = makeStyles(theme => ({
     iconLabel: {
         marginTop: "5px",
         marginRight: "10px",
-        width: "200px"
+        width: "125px"
 
     }
 
