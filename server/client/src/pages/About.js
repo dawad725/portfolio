@@ -142,10 +142,10 @@ export default function About() {
                             <div className={classes.container}>
                                 <Typography className={classes.text}>
                                     My name's Dave, and I'm a Full Stack Software Engineer based in Durham, North Carolina.
-                                    I would consider myself a foodie, coffee lover, traveler, and someone that always has a general curiousity for how things work.
+                                                                        I would consider myself a foodie, coffee lover, traveler, and someone that always has a general curiousity for how things work.
                             </Typography>
                                 <Typography className={classes.text}>
-                                    I'm exced
+                                    I'm excited to make contributions to a team, expand my skill set and grow as a professional developer.
                             </Typography>
                                 <Typography variant="h3" className={classes.stackTitle}>
                                     Tech stack
@@ -169,13 +169,13 @@ export default function About() {
                                     <Chip className={classes.chip} label="Chai HTTP" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
                                 </div>
                                 <div className={classes.chipContainer}>
-                                    <Chip className={classes.chip} label="Material UI" style={{ backgroundColor: 'orange', color: 'white' }} />
-                                    <Chip className={classes.chip} label="Bootstrap" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
-                                    <Chip className={classes.chip} label="Git" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
-                                    <Chip className={classes.chip} label="Github" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
-                                    <Chip className={classes.chip} label="VS Code" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
-                                    <Chip className={classes.chip} label="Postman" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
-                                    <Chip className={classes.chip} label="Swagger" variant="outlined" color='secondary' style={{ borderColor: 'orange', color: 'orange' }} />
+                                    <Chip className={classes.chip} label="Material UI" style={{ backgroundColor: 'green', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Bootstrap" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
+                                    <Chip className={classes.chip} label="Git" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
+                                    <Chip className={classes.chip} label="Github" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
+                                    <Chip className={classes.chip} label="VS Code" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
+                                    <Chip className={classes.chip} label="Postman" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
+                                    <Chip className={classes.chip} label="Swagger" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
                                 </div>
                             </div>
                         </Grid>

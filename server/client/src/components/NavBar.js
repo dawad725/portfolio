@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold",
     },
     appBar: {
-        backgroundColor: "white",
+        backgroundColor: "gray",
         boxShadow: "none",
     },
     buttonContainer: {
