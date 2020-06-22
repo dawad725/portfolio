@@ -189,32 +189,6 @@ export default function Contact() {
                         </Typography>
                     </Grid>
                 </Grid>
-                {/* <Grid spacing={3} container>
-                    <Grid item sm={3}>
-                        <div className={classes.imageContainer}>
-                            <img className={classes.image} src={home} alt='Home' />
-                            <label className={classes.iconLabel}>Durham, NC</label>
-                        </div>
-                    </Grid>
-                    <Grid item sm={3}>
-                        <div className={classes.imageContainer}>
-                            <a href="https://github.com/dawad725" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
-                            <label className={classes.iconLabel}>Github</label>
-                        </div>
-                    </Grid>
-                    <Grid item sm={3}>
-                        <div className={classes.imageContainer}>
-                            <a href={resume} target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
-                            <label className={classes.iconLabel}>Resume</label>
-                        </div>
-                    </Grid>
-                    <Grid item sm={3}>
-                        <div className={classes.imageContainer}>
-                            <a href="https://www.linkedin.com/in/david-awad/" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
-                            <label className={classes.iconLabel}>Linkedin</label>
-                        </div>
-                    </Grid>
-                </Grid> */}
 
                 <div className={classes.container}>
                     <form onSubmit={addItem}>

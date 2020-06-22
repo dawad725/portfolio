@@ -81,9 +81,9 @@ const useStyles = makeStyles(theme => ({
         marginLeft: "7em",
         marginTop: "6em",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "3em",
-            height: "35px",
-            width: "35px",
+            marginLeft: "1em",
+            height: "40px",
+            width: "40px",
         },
     },
 
@@ -102,6 +102,10 @@ const useStyles = makeStyles(theme => ({
         marginLeft: "3px",
     },
 
+    iconBox: {
+        // backgroundColor: "peach",
+        marginLeft: "3em"
+    }
 }))
 
 
@@ -136,10 +140,11 @@ export default function About() {
                         <Grid item xs={12} sm={6}>
                             <div className={classes.container}>
                                 <Typography className={classes.text}>
-                                    My name's Dave, and I'm a Full Stack Software Developer based in Durham, NC
+                                    My name's Dave, and I'm a Full Stack Software Developer based in Durham, NC.
+                                    I would consider myself a foodie, coffee lover, a traveler, and someone that always has a general curiousity for how things work.
                             </Typography>
                                 <Typography className={classes.text}>
-                                    I'm always striving to learn and take on new challenges.
+                                    I'm always striving to learn and take on new challenges. I love using code to help others
                             </Typography>
                                 <Typography variant="h3" className={classes.stackTitle}>
                                     Tech stack
@@ -173,36 +178,39 @@ export default function About() {
                                 </div>
                             </div>
                         </Grid>
-
-                    </Grid>
-                </Grid>
-                <Grid spacing={1} container className={classes.iconContainer}>
-                    <Grid item xs={3}>
-                        <div className={classes.imageContainer}>
-                            <img className={classes.image} src={home} alt='Home' />
-                            <label className={classes.iconLabel}>Durham, NC</label>
-                        </div>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <div className={classes.imageContainer}>
-                            <a href="https://github.com/dawad725" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
-                            <label className={classes.iconLabel}>Github</label>
-                        </div>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <div className={classes.imageContainer}>
-                            <a href={resume} target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
-                            <label className={classes.iconLabel}>Resume</label>
-                        </div>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <div className={classes.imageContainer}>
-                            <a href="https://www.linkedin.com/in/david-awad/" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
-                            <label className={classes.iconLabel}>Linkedin</label>
-                        </div>
                     </Grid>
                 </Grid>
 
+                <div className={classes.iconBox}>
+                    <Grid container>
+                        <Grid spacing={1} container className={classes.iconContainer}>
+                            {/* <Grid item xs={3}>
+                            <div className={classes.imageContainer}>
+                                <img className={classes.image} src={home} alt='Home' />
+                                <label className={classes.iconLabel}>Durham, NC</label>
+                            </div>
+                        </Grid> */}
+                            <Grid item xs={4}>
+                                <div className={classes.imageContainer}>
+                                    <a href="https://github.com/dawad725" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
+                                    {/* <label className={classes.iconLabel}>Github</label> */}
+                                </div>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <div className={classes.imageContainer}>
+                                    <a href={resume} target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
+                                    {/* <label className={classes.iconLabel}>Resume</label> */}
+                                </div>
+                            </Grid>
+                            <Grid item xs={4}>
+                                <div className={classes.imageContainer}>
+                                    <a href="https://www.linkedin.com/in/david-awad/" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
+                                    {/* <label className={classes.iconLabel}>Linkedin</label> */}
+                                </div>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </div>
             </div>
 
         </>
