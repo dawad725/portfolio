@@ -4,9 +4,13 @@ import { Typography, Grid, TextField, Button } from '@material-ui/core';
 import NavBar from '../components/NavBar'
 import emailjs from 'emailjs-com';
 
-import linkedin from '../images/linkedin.png'
+// import linkedin from '../images/linkedin.png'
+import linkedin from '../images/linkedin2.png'
 import github from '../images/github.png'
+import resumeIcon from '../images/resume.png'
+import home from '../images/home.png'
 
+import resume from "../resume/resume.pdf"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -58,7 +62,15 @@ const useStyles = makeStyles(theme => ({
 
     image: {
         width: "100%",
-        height: "auto"
+        height: "auto",
+        marginLeft: "3px"
+    },
+
+    iconLabel: {
+        marginTop: "5px",
+        marginRight: "10px",
+        width: "200px"
+
     }
 
 
@@ -107,7 +119,6 @@ export default function Contact() {
         const template_id = "portfoliosite";
         const user_id = 'user_CpSZxOogktSxfnutjVVbH'
 
-        console.log("VAL", values)
 
         const template_params = {
             name: values.name,
@@ -141,12 +152,26 @@ export default function Contact() {
                 <Grid spacing={3} container className={classes.iconContainer}>
                     <Grid item sm={3}>
                         <div className={classes.imageContainer}>
-                            <a href="https://www.linkedin.com/in/david-awad/" target="_blank"><img className={classes.image} src={linkedin} alt='linkedin' /></a>
+                            <img className={classes.image} src={home} alt='Home' />
+                            <label className={classes.iconLabel}>Durham, NC</label>
                         </div>
                     </Grid>
                     <Grid item sm={3}>
                         <div className={classes.imageContainer}>
-                            <a href="https://github.com/dawad725" target="_blank"><img className={classes.image} src={github} alt='github' /></a>
+                            <a href="https://github.com/dawad725" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
+                            <label className={classes.iconLabel}>Github</label>
+                        </div>
+                    </Grid>
+                    <Grid item sm={3}>
+                        <div className={classes.imageContainer}>
+                            <a href={resume} target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
+                            <label className={classes.iconLabel}>Resume</label>
+                        </div>
+                    </Grid>
+                    <Grid item sm={3}>
+                        <div className={classes.imageContainer}>
+                            <a href="https://www.linkedin.com/in/david-awad/" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
+                            <label className={classes.iconLabel}>Linkedin</label>
                         </div>
                     </Grid>
                 </Grid>
