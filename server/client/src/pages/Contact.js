@@ -103,9 +103,9 @@ export default function Contact() {
         }
 
         // console.log("checking ", template_params)
-        emailjs.sendForm(service_id, template_id, template_params, user_id)
-            .then((result) => {
-                console.log(result.text);
+        emailjs.send(service_id, template_id, template_params, user_id)
+            .then((response) => {
+                console.log(response.status, response.text);
             }, (error) => {
                 console.log(error.text);
             });
@@ -128,7 +128,7 @@ export default function Contact() {
 
                 <div className={classes.container}>
                     <form onSubmit={addItem}>
-                        <Grid spacing={1} container className={classes.formContainer}>
+                        <Grid spacing={1} container className={classes.formContainer}  >
                             <Grid item xs={12} sm={6}>
                                 <label className={classes.labels}>Name</label>
                                 <TextField
