@@ -74,8 +74,8 @@ export default function Home() {
                         </Grid>
 
                         <Grid item xs={12} sm={6}>
-                            <div className={classes.title}>
-                                <Typography variant="h2">
+                            <div className={`${classes.title} font`}>
+                                <Typography variant="h2" className="font">
                                     Dave Awad
                                 </Typography>
                                 <br></br>

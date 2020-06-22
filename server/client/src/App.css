@@ -1,3 +1,6 @@
+/* @import 'https://fonts.googleapis.com/css?family=Rock+Salt';
+@import 'https://fonts.googleapis.com/css2?family=Raleway'; */
+
 body, html {
         background: url('./images/shimmer.jpg')no-repeat center center fixed;
         width: 100vw;
@@ -7,6 +10,10 @@ body, html {
         background-repeat: no-repeat;
         margin: 0;
 }     
+
+.font {
+  font-family: "Raleway", sans-serif;
+}
 
 .fade-in {
   animation: fadeIn ease 4s;
