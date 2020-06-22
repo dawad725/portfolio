@@ -5,12 +5,12 @@ import NavBar from '../components/NavBar'
 import emailjs from 'emailjs-com';
 
 // import linkedin from '../images/linkedin.png'
-import linkedin from '../images/linkedin2.png'
-import github from '../images/github.png'
-import resumeIcon from '../images/resume.png'
-import home from '../images/home.png'
+// import linkedin from '../images/linkedin2.png'
+// import github from '../images/github.png'
+// import resumeIcon from '../images/resume.png'
+// import home from '../images/home.png'
 
-import resume from "../resume/resume.pdf"
+// import resume from "../resume/resume.pdf"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -66,14 +66,17 @@ const useStyles = makeStyles(theme => ({
         marginBottom: "3em",
         marginLeft: "7em",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "5em"
+            marginLeft: "5em",
+            height: "25px",
+            width: "25px"
         },
     },
 
     image: {
         width: "100%",
         height: "auto",
-        marginLeft: "3px"
+        marginLeft: "3px",
+
     },
 
     iconLabel: {
@@ -81,7 +84,25 @@ const useStyles = makeStyles(theme => ({
         marginRight: "10px",
         width: "125px"
 
+    },
+    textContainer: {
+        textAlign: "center",
+        fontSize: "30px",
+        marginBottom: "3em",
+
+    },
+
+    text: {
+        fontSize: "30px",
+        marginLeft: "4em",
+        marginBottom: "1em",
+        color: "#233768",
+        [theme.breakpoints.only("xs")]: {
+            marginLeft: "3em",
+            fontSize: "20px"
+        },
     }
+
 
 
 }))
@@ -158,8 +179,17 @@ export default function Contact() {
                         Contact
                     </Typography>
                 </div>
+                <Grid spacing={1} container >
+                    <Grid item xs={12}>
+                        <Typography className={classes.text}>
+                            Interested in working together? Drop me a line.
+                        </Typography>
+                        <Typography className={classes.text}>
 
-                <Grid spacing={3} container className={classes.iconContainer}>
+                        </Typography>
+                    </Grid>
+                </Grid>
+                {/* <Grid spacing={3} container>
                     <Grid item sm={3}>
                         <div className={classes.imageContainer}>
                             <img className={classes.image} src={home} alt='Home' />
@@ -184,7 +214,7 @@ export default function Contact() {
                             <label className={classes.iconLabel}>Linkedin</label>
                         </div>
                     </Grid>
-                </Grid>
+                </Grid> */}
 
                 <div className={classes.container}>
                     <form onSubmit={addItem}>
