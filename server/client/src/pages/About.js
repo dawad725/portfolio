@@ -62,7 +62,7 @@ const useStyles = makeStyles(theme => ({
         },
     },
     stackTitle: {
-        fontSize: "20px",
+        fontSize: "25px",
         marginBottom: "1em",
         textAlign: "center",
         marginRight: "4em",
@@ -92,10 +92,12 @@ const useStyles = makeStyles(theme => ({
     iconLabel: {
         marginTop: "5px",
         marginRight: "10px",
-        width: "125px",
+        // width: "125px",
+        fontSize: "12px",
         [theme.breakpoints.only("xs")]: {
-            // display: "none"
-            fontSize: "10px"
+            // display: "none",
+            fontSize: "10px",
+            margin: "0"
         },
     },
     image: {
@@ -143,10 +145,10 @@ export default function About() {
                             <div className={classes.container}>
                                 <Typography className={classes.text}>
                                     Hi, my name's Dave, and I'm a Full Stack Software Engineer based in Durham, North Carolina.
-                                                                        I would consider myself a foodie, coffee lover, traveler, and someone that always has a general curiousity for how things work.
+                                    I would consider myself a foodie, coffee lover, traveler, and someone that always has a general curiousity for how things work.
                             </Typography>
                                 <Typography className={classes.text}>
-                                    I'm excited to make contributions to a team, expand my skill set and grow as a professional developer.
+                                    I'm excited to make immediate contributions to a team, expand my skill set and grow as a professional developer.
                             </Typography>
                                 <Typography variant="h3" className={classes.stackTitle}>
                                     Tech stack
@@ -189,19 +191,19 @@ export default function About() {
                             <Grid item xs={4}>
                                 <div className={classes.imageContainer}>
                                     <a href="https://github.com/dawad725" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
-                                    {/* <label className={classes.iconLabel}>Github</label> */}
+                                    <label className={classes.iconLabel}>Github</label>
                                 </div>
                             </Grid>
                             <Grid item xs={4}>
                                 <div className={classes.imageContainer}>
                                     <a href={resume} rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
-                                    {/* <label className={classes.iconLabel}>Resume</label> */}
+                                    <label className={classes.iconLabel}>Resume</label>
                                 </div>
                             </Grid>
                             <Grid item xs={4}>
                                 <div className={classes.imageContainer}>
                                     <a href="https://www.linkedin.com/in/david-awad/" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
-                                    {/* <label className={classes.iconLabel}>Linkedin</label> */}
+                                    <label className={classes.iconLabel}>Linkedin</label>
                                 </div>
                             </Grid>
                         </Grid>

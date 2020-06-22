@@ -22,7 +22,6 @@ const useStyles = makeStyles(theme => ({
     },
     cards: {
         marginBottom: "1em",
-        paddingRight: "1em",
         [theme.breakpoints.only("xs")]: {
             marginLeft: "3em"
         },
