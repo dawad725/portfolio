@@ -157,30 +157,30 @@ export default function About() {
                             </Typography>
                                 <div className={classes.chipContainer}>
                                     <Chip className={classes.chip} label="JavaScript" style={{ backgroundColor: '#f50057', color: 'white' }} />
-                                    <Chip className={classes.chip} label="React" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
-                                    <Chip className={classes.chip} label="Redux" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
-                                    <Chip className={classes.chip} label="Backbone" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
-                                    <Chip className={classes.chip} label="jQuery" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
-                                    <Chip className={classes.chip} label="HTML" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
-                                    <Chip className={classes.chip} label="CSS" variant="outlined" color='secondary' style={{ borderColor: '#f50057', color: '#f50057' }} />
+                                    <Chip className={classes.chip} label="React" style={{ backgroundColor: '#f50057', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Redux" style={{ backgroundColor: '#f50057', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Backbone" style={{ backgroundColor: '#f50057', color: 'white' }} />
+                                    <Chip className={classes.chip} label="jQuery" style={{ backgroundColor: '#f50057', color: 'white' }} />
+                                    <Chip className={classes.chip} label="HTML" style={{ backgroundColor: '#f50057', color: 'white' }} />
+                                    <Chip className={classes.chip} label="CSS" style={{ backgroundColor: '#f50057', color: 'white' }} />
                                 </div>
                                 <div className={classes.chipContainer}>
                                     <Chip className={classes.chip} label="Node.js" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
-                                    <Chip className={classes.chip} label="Express" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
-                                    <Chip className={classes.chip} label="Passport" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
-                                    <Chip className={classes.chip} label="MongoDB" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
-                                    <Chip className={classes.chip} label="SQL" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
-                                    <Chip className={classes.chip} label="Mocha" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
-                                    <Chip className={classes.chip} label="Chai HTTP" variant="outlined" color='secondary' style={{ borderColor: '#3f51b5', color: '#3f51b5' }} />
+                                    <Chip className={classes.chip} label="Express" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Passport" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
+                                    <Chip className={classes.chip} label="MongoDB" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
+                                    <Chip className={classes.chip} label="SQL" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Mocha" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Chai HTTP" style={{ backgroundColor: '#3f51b5', color: 'white' }} />
                                 </div>
                                 <div className={classes.chipContainer}>
                                     <Chip className={classes.chip} label="Material UI" style={{ backgroundColor: 'green', color: 'white' }} />
-                                    <Chip className={classes.chip} label="Bootstrap" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
-                                    <Chip className={classes.chip} label="Git" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
-                                    <Chip className={classes.chip} label="Github" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
-                                    <Chip className={classes.chip} label="VS Code" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
-                                    <Chip className={classes.chip} label="Postman" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
-                                    <Chip className={classes.chip} label="Swagger" variant="outlined" color='secondary' style={{ borderColor: 'green', color: 'green' }} />
+                                    <Chip className={classes.chip} label="Bootstrap" style={{ backgroundColor: 'green', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Git" style={{ backgroundColor: 'green', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Github" style={{ backgroundColor: 'green', color: 'white' }} />
+                                    <Chip className={classes.chip} label="VS Code" style={{ backgroundColor: 'green', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Postman" style={{ backgroundColor: 'green', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Swagger" style={{ backgroundColor: 'green', color: 'white' }} />
                                 </div>
                             </div>
                         </Grid>
