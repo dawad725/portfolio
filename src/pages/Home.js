@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, Button } from '@material-ui/core';
 import NavBar from '../components/NavBar'
+import { Link } from 'react-router-dom';
 
 import computerImage from "../images/computer.png"
 
@@ -83,14 +84,16 @@ export default function Home() {
                                     Software Engineer
                                 </Typography>
                                 <div className={classes.buttonContainer}>
-                                    <Button
-                                        variant="outlined"
-                                        color="primary"
-                                        className={classes.button}
-                                        href='/About'
-                                    >
-                                        About me
+                                    <Link to="/About">
+                                        <Button
+                                            variant="outlined"
+                                            color="primary"
+                                            className={classes.button}
+
+                                        >
+                                            About me
                                 </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </Grid>
