@@ -8,7 +8,7 @@ import dave from '../images/dave.png'
 import linkedin from '../images/linkedin2.png'
 import github from '../images/github.png'
 import resumeIcon from '../images/resume.png'
-// import home from '../images/home.png'
+
 
 import resume from "../resume/resume.pdf"
 
