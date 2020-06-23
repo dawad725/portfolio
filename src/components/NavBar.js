@@ -36,19 +36,19 @@ export default function Navbar() {
                     <Grid container>
 
                         <Grid item className={classes.home} >
-                            <Button className={classes.text} href='/'>
+                            <Button className={classes.text} href='/portfolio/'>
                                 Home
                             </Button>
                         </Grid>
 
                         <Grid item className={classes.buttonContainer}>
-                            <Button className={classes.text} href='/About'>
+                            <Button className={classes.text} href='/portfolio/About'>
                                 About
                             </Button>
-                            <Button className={classes.text} href='/Projects'>
+                            <Button className={classes.text} href='/portfolio/Projects'>
                                 Projects
                             </Button>
-                            <Button className={classes.text} href='/Contact'>
+                            <Button className={classes.text} href='/portfolio/Contact'>
                                 Contact
                             </Button>
                         </Grid>
