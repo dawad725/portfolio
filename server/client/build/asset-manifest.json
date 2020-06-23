@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3c48a347.chunk.css",
+    "main.js": "/portfolio/static/js/main.99a4b64e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.99a4b64e.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.0236c30e.chunk.js": "/portfolio/static/js/2.0236c30e.chunk.js",
+    "static/js/2.0236c30e.chunk.js.map": "/portfolio/static/js/2.0236c30e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.d6082656f98b38c50eefcc7edc2a6a4c.js": "/portfolio/precache-manifest.d6082656f98b38c50eefcc7edc2a6a4c.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.3c48a347.chunk.css.map": "/portfolio/static/css/main.3c48a347.chunk.css.map",
+    "static/js/2.0236c30e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.0236c30e.chunk.js.LICENSE.txt",
+    "static/media/Medline.png": "/portfolio/static/media/Medline.0852556e.png",
+    "static/media/Portfolio.png": "/portfolio/static/media/Portfolio.8d0bdf26.png",
+    "static/media/WeatherApp.png": "/portfolio/static/media/WeatherApp.bc4adf7c.png",
+    "static/media/computer.png": "/portfolio/static/media/computer.1ec52ad5.png",
+    "static/media/dave.png": "/portfolio/static/media/dave.c8827f8f.png",
+    "static/media/illuminate.png": "/portfolio/static/media/illuminate.30bec564.png",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.af89e21d.pdf",
+    "static/media/App.css": "/portfolio/static/media/shimmer.c641b275.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.0236c30e.chunk.js",
+    "static/css/main.3c48a347.chunk.css",
+    "static/js/main.99a4b64e.chunk.js"
+  ]
+}
