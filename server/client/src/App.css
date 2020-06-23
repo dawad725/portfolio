@@ -123,6 +123,7 @@ body, html {
   }
   .makeStyles-imageContainer-2 {
     margin: 0 auto !important;
+    margin-top: 20% !important;
   }
 
 }
@@ -131,4 +132,26 @@ body, html {
   .makeStyles-buttonContainer-5 {
     padding-bottom: 6rem !important;
   }
+
+  .makeStyles-imageContainer-2 {
+    margin: 0 auto !important;
+   
+  }
 }
+
+@media (min-width: 768px){
+.home{
+    margin-top: 5em !important; 
+  }
+}
+@media (min-width: 1023px){
+.home{
+    margin-top: 8em !important; 
+  }
+}
+
+
+
+
+
+

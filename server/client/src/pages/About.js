@@ -79,13 +79,9 @@ const useStyles = makeStyles(theme => ({
     imageContainer: {
         height: "40px",
         width: "40px",
-        marginBottom: "3em",
-        marginLeft: "7em",
-        marginTop: "6em",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "0",
-            height: "40px",
-            width: "40px",
+            // marginLeft: "0",
+
         },
     },
 
@@ -106,9 +102,15 @@ const useStyles = makeStyles(theme => ({
         marginLeft: "3px",
     },
 
-    iconBox: {
-        // backgroundColor: "peach",
-        marginLeft: "3em"
+    iconContainer: {
+        marginBottom: "3em",
+        marginTop: "6em",
+        paddingRight: "4em",
+
+        [theme.breakpoints.only("xs")]: {
+            paddingRight: "4em"
+        },
+
     }
 }))
 
@@ -185,30 +187,31 @@ export default function About() {
                     </Grid>
                 </Grid>
 
-                <div className={classes.iconBox}>
-                    <Grid container>
-                        <Grid spacing={1} container className={classes.iconContainer}>
-                            <Grid item xs={4}>
-                                <div className={classes.imageContainer}>
-                                    <a href="https://github.com/dawad725" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
-                                    <label className={classes.iconLabel}>Github</label>
-                                </div>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <div className={classes.imageContainer}>
-                                    <a href={resume} rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
-                                    <label className={classes.iconLabel}>Resume</label>
-                                </div>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <div className={classes.imageContainer}>
-                                    <a href="https://www.linkedin.com/in/david-awad/" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
-                                    <label className={classes.iconLabel}>Linkedin</label>
-                                </div>
-                            </Grid>
-                        </Grid>
+
+                <Grid container className={classes.iconContainer}>
+                    <Grid item xs={3}>
+
                     </Grid>
-                </div>
+                    <Grid item xs={3} >
+                        <div className={classes.imageContainer}>
+                            <a href="https://github.com/dawad725" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
+                            <label className={classes.iconLabel}>Github</label>
+                        </div>
+                    </Grid>
+                    <Grid item xs={3} >
+                        <div className={classes.imageContainer}>
+                            <a href={resume} rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
+                            <label className={classes.iconLabel}>Resume</label>
+                        </div>
+                    </Grid>
+                    <Grid item xs={3} >
+                        <div className={classes.imageContainer}>
+                            <a href="https://www.linkedin.com/in/david-awad/" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
+                            <label className={classes.iconLabel}>Linkedin</label>
+                        </div>
+                    </Grid>
+                </Grid>
+
             </div>
 
         </>

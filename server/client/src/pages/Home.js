@@ -65,7 +65,7 @@ export default function Home() {
             <NavBar />
             <div className="fade-in">
                 <div className={classes.root}>
-                    <Grid container spacing={1} className={classes.container}>
+                    <Grid container spacing={1} className={`${classes.container} home`}>
 
                         <Grid item xs={12} sm={6}>
                             <div className={classes.imageContainer}>
