@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -36,21 +37,29 @@ export default function Navbar() {
                     <Grid container>
 
                         <Grid item className={classes.home} >
-                            <Button className={classes.text} href='/portfolio/'>
-                                Home
-                            </Button>
+                            <Link to="/">
+                                <Button className={classes.text}>
+                                    Home
+                                </Button>
+                            </Link>
                         </Grid>
 
                         <Grid item className={classes.buttonContainer}>
-                            <Button className={classes.text} href='/portfolio/About'>
-                                About
+                            <Link to="/About">
+                                <Button className={classes.text}>
+                                    About
+                                </Button>
+                            </Link>
+                            <Link to="/Projects">
+                                <Button className={classes.text}>
+                                    Projects
                             </Button>
-                            <Button className={classes.text} href='/portfolio/Projects'>
-                                Projects
+                            </Link>
+                            <Link to="/Contact">
+                                <Button className={classes.text}>
+                                    Contact
                             </Button>
-                            <Button className={classes.text} href='/portfolio/Contact'>
-                                Contact
-                            </Button>
+                            </Link>
                         </Grid>
 
                     </Grid>
