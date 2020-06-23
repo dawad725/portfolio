@@ -93,7 +93,6 @@ const useStyles = makeStyles(theme => ({
         color: "#233768",
         textAlign: " left",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "3em",
             fontSize: "20px",
             textAlign: "center",
             marginLeft: "0"
