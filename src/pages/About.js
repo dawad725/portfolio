@@ -132,7 +132,7 @@ export default function About() {
                             <div className={classes.picture}>
                                 <div className="polaroid">
                                     <img src={dave} alt='dave' />
-                                    <p>not photogenic...</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </Grid>
