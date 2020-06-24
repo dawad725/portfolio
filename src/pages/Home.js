@@ -47,6 +47,14 @@ const useStyles = makeStyles(theme => ({
     container: {
         minHeight: "50vh",
         marginTop: "3em"
+    },
+
+    name: {
+        fontSize: "60px",
+        fontWeight: "bold",
+        [theme.breakpoints.only("xs")]: {
+            fontSize: "40px"
+        },
     }
 }))
 
@@ -72,7 +80,7 @@ export default function Home() {
 
                         <Grid item xs={12}>
                             <div className={`${classes.title} font`}>
-                                <Typography variant="h2" className="font">
+                                <Typography className={classes.name}>
                                     Dave Awad
                                 </Typography>
                                 <br></br>
