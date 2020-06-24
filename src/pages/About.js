@@ -122,7 +122,7 @@ export default function About() {
                     <Grid item xs={12}>
                         <div className={classes.pageBanner}>
                             <Typography variant="h3">
-                                About me
+                                About Me
                         </Typography>
                         </div>
                     </Grid>

@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
     },
     formContainer: {
         textAlign: "center",
-        backgroundColor: "#cc4b37",
+        // backgroundColor: "#cc4b37",
         padding: "3em",
         marginTop: "5em",
         [theme.breakpoints.only("xs")]: {

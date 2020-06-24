@@ -151,41 +151,6 @@ body, html {
 }
 
 
-/* @media (max-width: 599.95px) and (min-width: 0px){
-    .jss26 {
-      width: 100% !important;
-  }
-  .jss2 {
-    margin-left: 5em !important;
-  }
-
-  .jss4{
-    margin-top: 6em !important;
-    margin-bottom: 7em !important;
-  }
-  .jss7{
-    margin-top: 1em !important;
- 
-  }
-  
-}
-
-.jss33 {
-  padding-bottom : 5em;
-}
-
-.jss12 {
-      padding-right: 7px;
-}
-
-@media (max-width: 599.95px) and (min-width: 0px){
-    .jss16 {
-      width: 100%;
-    }
-
-}
- */
-
 .navButtons {
   margin-right: 7px !important;
 }

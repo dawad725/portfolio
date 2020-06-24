@@ -11,22 +11,14 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1
     },
     imageContainer: {
-        marginLeft: "10em",
-        marginTop: "10em",
         width: "250px",
         height: "100px",
+        marginBottom: "4em",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "7em",
             width: "150px",
             height: "100px",
             marginTop: "5em"
-        },
-        [theme.breakpoints.only("sm")]: {
-            marginLeft: "9em",
-            width: "150px",
-            height: "100px",
-            marginTop: "9em"
-        },
+        }
     },
     image: {
         width: "100%",
@@ -35,6 +27,7 @@ const useStyles = makeStyles(theme => ({
     title: {
         textAlign: "center",
         marginTop: "11em",
+        fontWeight: "bold",
         [theme.breakpoints.only("xs")]: {
             marginTop: "11em",
             fontSize: "10px"
@@ -52,6 +45,7 @@ const useStyles = makeStyles(theme => ({
         // boxShadow: "0 0 5px blue, 0 0 10px blue, 0 0 10px blue"
     },
     container: {
+        minHeight: "50vh",
         marginTop: "3em"
     }
 }))
@@ -64,17 +58,19 @@ export default function Home() {
     return (
         <>
             <NavBar />
-            <div className="fade-in">
-                <div className={classes.root}>
-                    <Grid container spacing={1} className={`${classes.container} home`}>
 
-                        <Grid item xs={12} sm={6}>
+            <div className="fade-in">
+
+                <div className={classes.root}>
+                    <Grid container direction="column" alignItems="center" justify="center" className={`${classes.container} home`}>
+
+                        <Grid item xs={12}>
                             <div className={classes.imageContainer}>
                                 <img className={classes.image} src={computerImage} alt="computer" />
                             </div>
                         </Grid>
 
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={12}>
                             <div className={`${classes.title} font`}>
                                 <Typography variant="h2" className="font">
                                     Dave Awad
