@@ -125,6 +125,9 @@ body, html {
     margin: 0 auto !important;
     margin-top: 20% !important;
   }
+  .home {
+    padding-bottom: 4em !important;
+  }
 
 }
 

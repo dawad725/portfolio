@@ -47,10 +47,6 @@ const useStyles = makeStyles(theme => ({
     container: {
         minHeight: "50vh",
         marginTop: "5em",
-        [theme.breakpoints.only("sm")]: {
-            paddingBottom: "4em",
-
-        },
     },
 
     name: {
