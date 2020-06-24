@@ -88,10 +88,8 @@ const useStyles = makeStyles(theme => ({
     iconLabel: {
         marginTop: "5px",
         marginRight: "10px",
-        // width: "125px",
         fontSize: "12px",
         [theme.breakpoints.only("xs")]: {
-            // display: "none",
             fontSize: "10px",
             margin: "0"
         },
@@ -106,9 +104,9 @@ const useStyles = makeStyles(theme => ({
         marginBottom: "3em",
         marginTop: "6em",
         paddingRight: "4em",
-
         [theme.breakpoints.only("xs")]: {
-            paddingRight: "4em"
+            paddingRight: "4em",
+            marginBottom: "5em"
         },
 
     }
