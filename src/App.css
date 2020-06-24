@@ -151,7 +151,7 @@ body, html {
 }
 
 
-@media (max-width: 599.95px) and (min-width: 0px){
+/* @media (max-width: 599.95px) and (min-width: 0px){
     .jss26 {
       width: 100% !important;
   }
@@ -170,7 +170,22 @@ body, html {
   
 }
 
+.jss33 {
+  padding-bottom : 5em;
+}
 
+.jss12 {
+      padding-right: 7px;
+}
 
+@media (max-width: 599.95px) and (min-width: 0px){
+    .jss16 {
+      width: 100%;
+    }
 
+}
+ */
 
+.navButtons {
+  margin-right: 7px !important;
+}
