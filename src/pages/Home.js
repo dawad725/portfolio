@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
         // boxShadow: "0 0 5px blue, 0 0 10px blue, 0 0 10px blue"
     },
     container: {
-        minHeight: "50vh",
+        minHeight: "40vh",
         marginTop: "5em",
     },
 
