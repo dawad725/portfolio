@@ -44,7 +44,7 @@ export default function Navbar() {
                             </Link>
                         </Grid>
 
-                        <Grid item className={`${classes.buttonContainer} navButtons` >
+                        <Grid item className={`${classes.buttonContainer} navButtons`} >
                             <Link to="/About">
                                 <Button className={classes.text}>
                                     About
