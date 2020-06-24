@@ -106,7 +106,7 @@ const useStyles = makeStyles(theme => ({
         paddingRight: "4em",
         [theme.breakpoints.only("xs")]: {
             paddingRight: "4em",
-            marginBottom: "5em"
+            marginBottom: "7em"
         },
 
     }
