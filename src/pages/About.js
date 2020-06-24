@@ -79,10 +79,6 @@ const useStyles = makeStyles(theme => ({
     imageContainer: {
         height: "40px",
         width: "40px",
-        [theme.breakpoints.only("xs")]: {
-            // marginLeft: "0",
-
-        },
     },
 
     iconLabel: {
@@ -106,7 +102,7 @@ const useStyles = makeStyles(theme => ({
         paddingRight: "4em",
         [theme.breakpoints.only("xs")]: {
             paddingRight: "4em",
-            marginBottom: "7em"
+
         },
 
     }
@@ -186,7 +182,7 @@ export default function About() {
                 </Grid>
 
 
-                <Grid container className={classes.iconContainer}>
+                <Grid container className={`${classes.iconContainer} iconBox`} >
                     <Grid item xs={3}>
 
                     </Grid>

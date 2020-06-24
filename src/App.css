@@ -193,3 +193,9 @@ body, html {
 .formContainer {
   padding-bottom: 5em !important;
 }
+
+@media (max-width: 599.95px) and (min-width: 0px){
+  .iconBox {
+    margin-bottom: 7em !important;
+  }
+}
