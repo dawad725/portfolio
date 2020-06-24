@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: "white",
         marginBottom: "2em",
         [theme.breakpoints.only("xs")]: {
-            width: "250px"
+            // width: "250px"
         },
     },
     container: {
@@ -186,7 +186,7 @@ export default function Contact() {
                     </Grid>
                 </Grid>
 
-                <div className={classes.container}>
+                <div className={`${classes.container} formContainer`}>
                     <form onSubmit={addItem}>
                         <Grid spacing={1} container className={classes.formContainer}>
                             <Grid item xs={12} sm={6}>

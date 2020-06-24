@@ -189,3 +189,7 @@ body, html {
 .navButtons {
   margin-right: 7px !important;
 }
+
+.formContainer {
+  padding-bottom: 5em !important;
+}
