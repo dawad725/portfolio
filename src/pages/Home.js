@@ -89,10 +89,9 @@ export default function Home() {
                                             variant="outlined"
                                             color="primary"
                                             className={classes.button}
-
                                         >
                                             About me
-                                </Button>
+                                        </Button>
                                     </Link>
                                 </div>
                             </div>
