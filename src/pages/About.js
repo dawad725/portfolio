@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => ({
         paddingRight: "40px",
         paddingLeft: "10px",
         marginRight: "10px",
+        textAlign: "center",
         [theme.breakpoints.only("xs")]: {
             marginTop: "3em",
             paddingRight: "20px",
@@ -51,11 +52,6 @@ const useStyles = makeStyles(theme => ({
             textAlign: "center",
         },
     },
-    title: {
-        textAlign: "center",
-        fontSize: "20px",
-        marginBottom: "1em"
-    },
     chip: {
         marginRight: ".5em",
         marginBottom: "1em",
@@ -65,11 +61,12 @@ const useStyles = makeStyles(theme => ({
     },
     stackTitle: {
         fontSize: "25px",
-        marginBottom: "1em",
+        marginBottom: "2em",
+        marginTop: "1em",
         textAlign: "center",
-        marginRight: "4em",
+        // marginRight: "4em",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "4em",
+            // marginLeft: "4em",
             textAlign: "center",
             marginTop: "4em"
         },
@@ -148,9 +145,9 @@ export default function About() {
                                 <Typography className={classes.text}>
                                     I'm excited to make immediate contributions to a team, expand my skill set and grow as a professional developer.
                             </Typography>
-                                <Typography variant="h3" className={classes.stackTitle}>
+                                <Typography className={classes.stackTitle}>
                                     Tech stack
-                            </Typography>
+                                    </Typography>
                                 <div className={classes.chipContainer}>
                                     <Chip className={classes.chip} label="JavaScript" style={{ backgroundColor: '#f50057', color: 'white' }} />
                                     <Chip className={classes.chip} label="React" style={{ backgroundColor: '#f50057', color: 'white' }} />
