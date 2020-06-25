@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 0
     },
 
-    home: {
+    homeButton: {
         [theme.breakpoints.only('xs')]: {
             display: 'none',
         },
@@ -113,7 +113,7 @@ export default function Navbar() {
 
                     <Grid container>
 
-                        <Grid item className={classes.home} >
+                        <Grid item className={classes.homeButton} >
                             <Link to="/" className={classes.homeText}>
                                 Home
                             </Link>
