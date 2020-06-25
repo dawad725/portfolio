@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Grid, MenuItem, Menu } from '@material-ui/core';
+import { AppBar, Toolbar, iconButton, Grid, MenuItem, Menu } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
         color: "white",
         textDecoration: "none",
         fontWeight: "bold",
-        paddingRight: "10px",
+        paddingRight: "25px",
     },
 
     homeText: {
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
             display: 'none',
         },
     },
-    iconbutton: {
+    iconButton: {
         marginRight: "5px"
     }
 }));
@@ -120,15 +120,15 @@ export default function Navbar() {
                         </Grid>
 
                         <Grid item className={`${classes.menuButtonContainer} navButtons`} >
-                            <IconButton
+                            <iconButton
                                 edge="end"
                                 color="inherit"
                                 aria-label="menu"
                                 onClick={handleMenu}
-                                className={classes.iconbutton}
+                                className={classes.iconButton}
                             >
                                 <MenuIcon />
-                            </IconButton>
+                            </iconButton>
                             <Menu
                                 id="simple-menu"
                                 anchorEl={anchorEl}
