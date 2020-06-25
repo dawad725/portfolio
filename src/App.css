@@ -115,11 +115,12 @@ body, html {
   .card-deck{
   padding-right: 10% !important;
   }
+
 }
 
 @media (max-width: 599.95px) and (min-width: 0px) {
   .makeStyles-textField-4 {
-    width: 75% !important;
+    width: 100% !important;
   }
   .makeStyles-imageContainer-2 {
     margin: 0 auto !important;
@@ -154,9 +155,9 @@ body, html {
 }
 
 
-.navButtons {
+/* .navButtons {
   margin-right: 7px !important;
-}
+} */
 
 .formContainer {
   padding-bottom: 5em !important;
@@ -165,5 +166,11 @@ body, html {
 @media (max-width: 599.95px) and (min-width: 0px){
   .iconBox {
     margin-bottom: 7em !important;
+  }
+}
+
+@media (min-width: 540px ) and (max-width: 863px){
+  .home {
+    padding-top: 20em !important;
   }
 }

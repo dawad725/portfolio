@@ -22,8 +22,9 @@ const useStyles = makeStyles(theme => ({
         marginTop: "2.5em"
     },
     picture: {
-        marginLeft: "4em",
+        marginLeft: "3em",
         marginTop: "8em",
+        paddingRight: "2em",
         [theme.breakpoints.only("xs")]: {
             margin: "auto",
             width: "50 %",
@@ -32,13 +33,14 @@ const useStyles = makeStyles(theme => ({
     },
     container: {
         marginTop: "8em",
-        paddingRight: "10px",
+        paddingRight: "40px",
         paddingLeft: "10px",
         marginRight: "10px",
         [theme.breakpoints.only("xs")]: {
             marginTop: "3em",
             paddingRight: "20px",
-            paddingLeft: "20px"
+            paddingLeft: "20px",
+            marginRight: "0"
 
         },
     },

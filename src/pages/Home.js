@@ -92,7 +92,7 @@ export default function Home() {
                                     Software Engineer
                                 </Typography>
                                 <div className={classes.buttonContainer}>
-                                    <Link to="/About">
+                                    <Link to="/about">
                                         <Button
                                             variant="outlined"
                                             color="primary"

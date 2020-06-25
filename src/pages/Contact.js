@@ -11,8 +11,6 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.only("xs")]: {
             paddingBottom: "3em",
 
-
-
         },
     },
     pageBanner: {
@@ -22,13 +20,12 @@ const useStyles = makeStyles(theme => ({
     },
     formContainer: {
         textAlign: "center",
-        // backgroundColor: "#cc4b37",
+        backgroundColor: "#0B6AB0",
         padding: "3em",
         marginTop: "5em",
         [theme.breakpoints.only("xs")]: {
             padding: "1em",
-            marginTop: "2em"
-
+            marginTop: "2em",
         },
 
     },
@@ -91,7 +88,7 @@ const useStyles = makeStyles(theme => ({
         marginLeft: "2.5em",
         marginBottom: "1em",
         color: "#233768",
-        textAlign: " left",
+        textAlign: "left",
         [theme.breakpoints.only("xs")]: {
             fontSize: "20px",
             textAlign: "center",
@@ -190,9 +187,10 @@ export default function Contact() {
                     <form onSubmit={addItem}>
                         <Grid spacing={1} container className={classes.formContainer}>
                             <Grid item xs={12} sm={6}>
-                                <label className={classes.labels}>Name</label>
+                                <label for="name" className={classes.labels}>Full Name*</label>
                                 <TextField
                                     name="name"
+                                    id="name"
                                     fullWidth={true}
                                     value={values.name}
                                     variant="outlined"
@@ -202,9 +200,10 @@ export default function Contact() {
                             </Grid>
 
                             <Grid item xs={12} sm={6} >
-                                <label className={classes.labels}>Email</label>
+                                <label for="email" className={classes.labels}>Email*</label>
                                 <TextField
                                     name="email"
+                                    id="email"
                                     fullWidth={true}
                                     value={values.email}
                                     variant="outlined"
@@ -213,9 +212,9 @@ export default function Contact() {
                                 />
                             </Grid>
                             <Grid item xs={12} >
-                                <label className={classes.labels}>Message</label>
+                                <label for="message" className={classes.labels}>Message*</label>
                                 <TextField
-                                    id="outlined-multiline-static"
+                                    id="outlined-multiline-static message"
                                     name="message"
                                     multiline
                                     fullWidth={true}
@@ -225,24 +224,22 @@ export default function Contact() {
                                     onChange={handleInputChange}
                                     className={classes.textField}
                                 />
+                                <Typography className={classes.labels}>*Required Field</Typography>
                             </Grid>
                             <Grid item xs={12} className={classes.button}>
                                 <Button
                                     className={classes.button}
                                     color="primary"
+                                    type="submit"
                                     variant="contained"
                                     onClick={addItem}
                                 >
                                     Submit
                             </Button>
-
                             </Grid>
                         </Grid>
                     </form>
                 </div>
-
-
-
             </div>
 
         </>
