@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 
 import linkedin from '../images/linkedin2.png'
 import github from '../images/github.png'
