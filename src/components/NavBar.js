@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, iconButton, Grid, MenuItem, Menu } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Grid, MenuItem, Menu } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 
@@ -112,7 +112,7 @@ export default function Navbar() {
                         </Grid>
 
                         <Grid item className={`${classes.menuButtonContainer} navButtons`} >
-                            <iconButton
+                            <IconButton
                                 edge="end"
                                 color="inherit"
                                 aria-label="menu"
@@ -120,7 +120,7 @@ export default function Navbar() {
                                 className={classes.iconButton}
                             >
                                 <MenuIcon />
-                            </iconButton>
+                            </IconButton>
                             <Menu
                                 id="simple-menu"
                                 anchorEl={anchorEl}
@@ -146,17 +146,17 @@ export default function Navbar() {
                             </Menu>
                         </Grid>
 
-                            <Grid item className={classes.navButtonContainer}>
-                                <Link to="/About" className={classes.navText}>
-                                    About
+                        <Grid item className={classes.navButtonContainer}>
+                            <Link to="/About" className={classes.navText}>
+                                About
                                 </Link>
-                                <Link to="/Projects" className={classes.navText}>
-                                    Projects
+                            <Link to="/Projects" className={classes.navText}>
+                                Projects
                                 </Link>
-                                <Link to="/Contact" className={classes.navText}>
-                                    Contact
+                            <Link to="/Contact" className={classes.navText}>
+                                Contact
                                 </Link>
-                            </Grid>
+                        </Grid>
                     </Grid>
                 </Toolbar>
             </AppBar>

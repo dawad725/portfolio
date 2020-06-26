@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, TextField, Button } from '@material-ui/core';
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 import emailjs from 'emailjs-com';
 
 
@@ -193,7 +194,7 @@ export default function Contact() {
                     <form onSubmit={addItem}>
                         <Grid spacing={1} container className={classes.formContainer}>
                             <Grid item xs={12} sm={6}>
-                                <label for="name" className={classes.labels}>Full Name*</label>
+                                <label htmlFor="name" className={classes.labels}>Full Name*</label>
                                 <TextField
                                     name="name"
                                     id="name"
@@ -206,7 +207,7 @@ export default function Contact() {
                             </Grid>
 
                             <Grid item xs={12} sm={6} >
-                                <label for="email" className={classes.labels}>Email*</label>
+                                <label htmlFor="email" className={classes.labels}>Email*</label>
                                 <TextField
                                     name="email"
                                     id="email"
@@ -218,7 +219,7 @@ export default function Contact() {
                                 />
                             </Grid>
                             <Grid item xs={12} >
-                                <label for="message" className={classes.labels}>Message*</label>
+                                <label htmlFor="message" className={classes.labels}>Message*</label>
                                 <TextField
                                     id="outlined-multiline-static message"
                                     name="message"
@@ -246,6 +247,7 @@ export default function Contact() {
                         </Grid>
                     </form>
                 </div>
+                <Footer />
             </div>
 
         </>

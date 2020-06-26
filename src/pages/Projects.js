@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 import Project from '../components/Project';
 import CardDeck from 'react-bootstrap/CardDeck';
 
@@ -70,6 +71,7 @@ export default function Projects() {
                     />
                 </CardDeck>
 
+                <Footer />
 
             </div>
 
