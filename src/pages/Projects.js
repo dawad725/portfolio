@@ -52,15 +52,15 @@ export default function Projects() {
                 <CardDeck className={`${classes.cards} carddeck`}>
                     <Project title={"illuminate"} image={illuminate} border={'dark'} bg={'light'} href_app={'https://illuminate-app.herokuapp.com/'}
                         text={'Illuminate helps consumers understand the approximate savings potential they will see by upgrading their current lighting in their home to energy efficient LED lighting.'}
-                        stack={'React | Redux | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
+                        stack={'React | Redux | HTML | CSS | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
                     />
                     <Project title={"Dave's Weather Station"} image={weatherApp} border={'dark'} bg={'light'} href_app={'https://daves-weather-station.herokuapp.com/'}
                         text={"This fun app allows a user to check the weather by zip code or city. It also gives you the option to see the five day forecast for that area."}
-                        stack={'React | Material UI | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
+                        stack={'React | Material UI | HTML | CSS | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
                     />
                     <Project title={"Medline.io"} image={medline} border={'dark'} bg={'light'} href_app={'https://www.medline.io/'}
                         text={"This is a platform that I'm currently volunteering on with a remote team to match medical supply companies to frontline workers in need of PPE while fighting the COVID-19 pandemic."}
-                        stack={'React | Material UI | Heroku'} href_code={'https://github.com/ComeTiss/medline-frontend'}
+                        stack={'React | Material UI | HTML | CSS | Heroku'} href_code={'https://github.com/ComeTiss/medline-frontend'}
                     />
 
                 </CardDeck>
@@ -68,11 +68,11 @@ export default function Projects() {
                 <CardDeck className={classes.cards}>
                     <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={'https://daveawad.com'}
                         text={"That's right, this site you're purusing is no template. Check out the code and let me know what you think : )"}
-                        stack={'React | Material UI | React Bootstrap | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
+                        stack={'React | Material UI | React Bootstrap | HTML | CSS | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
                     />
-                    <Project title={"HTML Mockup"} image={mockup} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
+                    <Project title={"Mockup page"} image={mockup} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
                         text={"This is an HTML page based I created based on a given mockup."}
-                        stack={'HTML | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
+                        stack={'HTML | CSS | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
                     />
                 </CardDeck>
 
