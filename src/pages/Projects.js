@@ -66,8 +66,12 @@ export default function Projects() {
 
                 <CardDeck className={classes.cards}>
                     <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={'https://daveawad.com'}
-                        text={"Last but not least my portfolio site your currently using. Please let me know what you think : )"}
+                        text={"That's right, this site you're purusing is no template. Check out the code and let me know what you think : )"}
                         stack={'React | Material UI | React Bootstrap | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
+                    />
+                    <Project title={"HTML Mockup"} image={''} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
+                        text={"This is an HTML page based I created based on a given mockup."}
+                        stack={'HTML | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
                     />
                 </CardDeck>
 
