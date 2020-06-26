@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         [theme.breakpoints.only("xs")]: {
             paddingRight: "4em",
-
         },
 
     },
