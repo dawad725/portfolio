@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     imageContainer: {
         height: "40px",
         width: "40px",
+        textAlign: "center"
 
     },
     iconLabel: {
@@ -35,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "12px",
         textDecoration: "none",
         color: "black",
+        textAlign: "center",
         [theme.breakpoints.only("xs")]: {
             fontSize: "10px",
             margin: "0"

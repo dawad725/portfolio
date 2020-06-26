@@ -106,22 +106,26 @@ export default function Contact() {
 
     const classes = useStyles();
 
+    // This is what we will use to set the values to in the form with after submit is clicked. 
     const initialState = {
         name: "",
         email: "",
         message: "",
     }
-
+    //Clears the values of the form to what is in the initial state object
     const clearState = () => {
         setValues({ ...initialState });
     }
 
+    //This listens to the changes in our form inputs and sets those changes in our local state variable "values"
     const handleInputChange = e => {
         e.preventDefault();
         const { name, value } = e.target
         setValues({ ...values, [name]: value })
     }
-
+    //This onClick function will run the user clicks submit. 
+    //This will check the values in state and if any of them are not filled it, 
+    //it will not allow the form to be submited.  
     const addItem = (e) => {
         e.preventDefault();
         const { name, email, message } = values
@@ -130,14 +134,16 @@ export default function Contact() {
 
 
 
-        console.log("values", values)
+        //If everything is filled out, we send our values to our sendEmail function. 
         sendEmail(values);
+        //After sending those values, we will run this function to reset the values to our initial state object
         clearState();
     }
 
-
+    //Our state
     const [values, setValues] = useState(initialState)
 
+    // once form is submited we send these values through our template params through the below api call
     function sendEmail(values) {
         const service_id = "default_service";
         const template_id = "portfoliosite";

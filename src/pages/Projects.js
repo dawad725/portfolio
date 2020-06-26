@@ -64,7 +64,7 @@ export default function Projects() {
                 </CardDeck>
 
                 <CardDeck className={classes.cards}>
-                    <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={null}
+                    <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={'https://daveawad.com'}
                         text={"Last but not least my portfolio site your currently using. Please let me know what you think : )"}
                         stack={'React | Material UI | React Bootstrap | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
                     />
