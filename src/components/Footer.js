@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "3em",
         marginTop: "6em",
         paddingRight: "4em",
+        textAlign: "center",
         [theme.breakpoints.only("xs")]: {
             paddingRight: "4em",
 
@@ -26,11 +27,14 @@ const useStyles = makeStyles((theme) => ({
     imageContainer: {
         height: "40px",
         width: "40px",
+
     },
     iconLabel: {
         marginTop: "5px",
         marginRight: "10px",
         fontSize: "12px",
+        textDecoration: "none",
+        color: "black",
         [theme.breakpoints.only("xs")]: {
             fontSize: "10px",
             margin: "0"
@@ -52,24 +56,23 @@ export default function Footer() {
         <div className={classes.root}>
             <Grid container className={`${classes.iconContainer} iconBox`} >
                 <Grid item xs={3}>
-
                 </Grid>
                 <Grid item xs={3} >
                     <div className={classes.imageContainer}>
-                        <a href="https://github.com/dawad725" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={github} alt='github' /></a>
-                        <label className={classes.iconLabel}>Github</label>
+                        <a href="https://github.com/dawad725" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={github} alt='github' />
+                            <label className={classes.iconLabel}>Github</label></a>
                     </div>
                 </Grid>
                 <Grid item xs={3} >
                     <div className={classes.imageContainer}>
-                        <a href={resume} rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' /></a>
-                        <label className={classes.iconLabel}>Resume</label>
+                        <a href={resume} rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={resumeIcon} alt='resume' />
+                            <label className={classes.iconLabel}>Resume</label></a>
                     </div>
                 </Grid>
                 <Grid item xs={3} >
                     <div className={classes.imageContainer}>
-                        <a href="https://www.linkedin.com/in/david-awad/" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' /></a>
-                        <label className={classes.iconLabel}>Linkedin</label>
+                        <a href="https://www.linkedin.com/in/david-awad/" rel="noopener noreferrer" target="_blank" ><img className={classes.image} src={linkedin} alt='linkedin' />
+                            <label className={classes.iconLabel}>Linkedin</label></a>
                     </div>
                 </Grid>
             </Grid>
