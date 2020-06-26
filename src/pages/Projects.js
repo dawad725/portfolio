@@ -76,7 +76,7 @@ export default function Projects() {
                         stack={'React | Material UI | React Bootstrap | HTML | CSS | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
                     />
                     <Project title={"Mockup page"} image={mockup} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
-                        text={"This is an HTML page based I created based on a given mockup."}
+                        text={"This is an HTML page I created based on a given mockup to work from."}
                         stack={'HTML | CSS | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
                     />
                 </CardDeck>
