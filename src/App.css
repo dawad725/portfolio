@@ -101,8 +101,8 @@ body, html {
 
 @media screen and (max-height: 812px) {
     .MuiToolbar-gutters {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 

@@ -17,10 +17,6 @@ const useStyles = makeStyles((theme) => ({
         textDecoration: "none",
         fontWeight: "bold",
         paddingRight: "10px",
-        // fontSize: "20px"
-        // [theme.breakpoints.only("xs")]: {
-        //     fontSize: "10px"
-        // },
     },
 
     navText: {
@@ -35,14 +31,10 @@ const useStyles = makeStyles((theme) => ({
         textDecoration: "none",
         fontWeight: "bold",
         paddingLeft: "10px",
-        // fontSize: "20px"
-        // [theme.breakpoints.only("xs")]: {
-        //     fontSize: "10px"
-        // },
     },
     appBar: {
         backgroundColor: "#0B6AB0",
-        boxShadow: "none",
+        // boxShadow: "none",
     },
     menuButtonContainer: {
         marginLeft: "auto",
