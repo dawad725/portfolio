@@ -47,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
         height: "auto",
         marginLeft: "3px",
     },
+
 }));
 
 export default function Footer() {

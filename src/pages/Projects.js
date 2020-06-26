@@ -25,9 +25,9 @@ const useStyles = makeStyles(theme => ({
     },
     cards: {
         marginBottom: "1em",
-        marginRight: "1em",
+        textAlign: "center",
         [theme.breakpoints.only("xs")]: {
-            marginLeft: "3em"
+            marginLeft: "2.5em",
         },
     }
 }))
@@ -72,7 +72,7 @@ export default function Projects() {
                         stack={'Backbone.js | HTML | CSS '} href_code={'https://github.com/dawad725/backbone-youtube'}
                     />
                     <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={'https://daveawad.com'}
-                        text={"That's right, this site you're purusing is no template. Check out the code and let me know what you think : )"}
+                        text={"That's right, this site you're perusing is no template. Check out the code and let me know what you think : )"}
                         stack={'React | Material UI | React Bootstrap | HTML | CSS | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
                     />
                     <Project title={"Mockup page"} image={mockup} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
