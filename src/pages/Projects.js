@@ -68,7 +68,7 @@ export default function Projects() {
 
                 <CardDeck className={classes.cards}>
                     <Project title={"Dave-Tube"} image={youtube} border={'dark'} bg={'light'} href_app={null}
-                        text={"This app focuses on building a smaller light weight version of youtube using their API."}
+                        text={"This app is a smaller light weight version of youtube using their API built from the ground up."}
                         stack={'Backbone.js | HTML | CSS '} href_code={'https://github.com/dawad725/backbone-youtube'}
                     />
                     <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={'https://daveawad.com'}
