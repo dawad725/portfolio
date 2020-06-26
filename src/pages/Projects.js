@@ -12,6 +12,7 @@ import weatherApp from '../images/weather.png'
 import portfolio from '../images/portfolio.png'
 import medline from '../images/Medline.png'
 import mockup from '../images/mockup.png'
+import youtube from '../images/youtube.png'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -66,6 +67,10 @@ export default function Projects() {
                 </CardDeck>
 
                 <CardDeck className={classes.cards}>
+                    <Project title={"Dave-Tube"} image={youtube} border={'dark'} bg={'light'} href_app={null}
+                        text={"This app focuses on building a smaller light weight version of youtube using their API."}
+                        stack={'Backbone.js | HTML | CSS '} href_code={'https://github.com/dawad725/backbone-youtube'}
+                    />
                     <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={'https://daveawad.com'}
                         text={"That's right, this site you're purusing is no template. Check out the code and let me know what you think : )"}
                         stack={'React | Material UI | React Bootstrap | HTML | CSS | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
