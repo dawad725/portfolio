@@ -8,9 +8,10 @@ import CardDeck from 'react-bootstrap/CardDeck';
 
 // Screen shots of the applications 
 import illuminate from '../images/illuminate.png'
-import weatherApp from '../images/WeatherApp.png'
-import portfolio from '../images/portfolio1.png'
+import weatherApp from '../images/weather.png'
+import portfolio from '../images/portfolio.png'
 import medline from '../images/Medline.png'
+import mockup from '../images/mockup.png'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -69,7 +70,7 @@ export default function Projects() {
                         text={"That's right, this site you're purusing is no template. Check out the code and let me know what you think : )"}
                         stack={'React | Material UI | React Bootstrap | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
                     />
-                    <Project title={"HTML Mockup"} image={''} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
+                    <Project title={"HTML Mockup"} image={mockup} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
                         text={"This is an HTML page based I created based on a given mockup."}
                         stack={'HTML | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
                     />

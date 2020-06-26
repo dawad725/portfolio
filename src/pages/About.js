@@ -4,7 +4,7 @@ import { Typography, Grid, Chip } from '@material-ui/core';
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
-import dave from '../images/dave.png'
+import dave from '../images/dave.jpg'
 
 
 
