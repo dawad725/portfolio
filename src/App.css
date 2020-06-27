@@ -16,6 +16,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
   -ms-overflow-style: none;  /* IE and Edge */
