@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     homeButton: {
-        [theme.breakpoints.only('xs')]: {
+        [theme.breakpoints.down('sm')]: {
             display: 'none',
         },
     },
