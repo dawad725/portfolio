@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 html, body {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-   height:120%; /*A value other than height:auto needs to be set*/
+   height:100%; /*A value other than height:auto needs to be set*/
 }
 
 body {
