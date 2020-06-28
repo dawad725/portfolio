@@ -11,7 +11,9 @@ import Contact from "./pages/Contact"
 // Here is where we implement our browser router 
 // and assign our components to our paths within our app
 function App() {
+
   return (
+
 
     <Router>
       <Switch>
