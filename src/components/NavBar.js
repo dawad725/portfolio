@@ -147,13 +147,13 @@ export default function Navbar() {
                         </Grid>
 
                         <Grid item className={classes.navButtonContainer}>
-                            <Link to="/About" className={classes.navText}>
+                            <Link to="/about" className={classes.navText}>
                                 About
                                 </Link>
-                            <Link to="/Projects" className={classes.navText}>
+                            <Link to="/projects" className={classes.navText}>
                                 Projects
                                 </Link>
-                            <Link to="/Contact" className={classes.navText}>
+                            <Link to="/contact" className={classes.navText}>
                                 Contact
                                 </Link>
                         </Grid>

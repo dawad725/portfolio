@@ -68,8 +68,8 @@ export default function Projects() {
 
                 <CardDeck className={classes.cards}>
                     <Project title={"Dave-Tube"} image={youtube} border={'dark'} bg={'light'} href_app={null}
-                        text={"This app is a smaller light weight version of youtube using their API built from the ground up."}
-                        stack={'Backbone.js | HTML | CSS '} href_code={'https://github.com/dawad725/backbone-youtube'}
+                        text={"This is a smaller version of youtube that I built using backbone.js as a framwwork."}
+                        stack={'Backbone.js | HTML | CSS | Bootstrap '} href_code={'https://github.com/dawad725/backbone-youtube'}
                     />
                     <Project title={"My Portfolio Site"} image={portfolio} border={'dark'} bg={'light'} href_app={'https://daveawad.com'}
                         text={"That's right, this site you're perusing is no template. Check out the code and let me know what you think : )"}
@@ -77,7 +77,7 @@ export default function Projects() {
                     />
                     <Project title={"Mockup page"} image={mockup} border={'dark'} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
                         text={"This is an HTML page I created based on a given mockup to work from."}
-                        stack={'HTML | CSS | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
+                        stack={'HTML | CSS | Bootstrap | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
                     />
                 </CardDeck>
 
