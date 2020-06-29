@@ -106,7 +106,7 @@ export default function Navbar() {
                     <Grid container>
 
                         <Grid item className={classes.homeButton} >
-                            <Link to="/" className={classes.homeText}>
+                            <Link to="/" className={classes.homeText} style={{ textDecoration: 'none', color: "white" }}>
                                 Home
                             </Link>
                         </Grid>
@@ -147,13 +147,13 @@ export default function Navbar() {
                         </Grid>
 
                         <Grid item className={classes.navButtonContainer}>
-                            <Link to="/about" className={classes.navText}>
+                            <Link to="/about" className={classes.navText} style={{ textDecoration: 'none', color: "white" }}>
                                 About
                                 </Link>
-                            <Link to="/projects" className={classes.navText}>
+                            <Link to="/projects" className={classes.navText} style={{ textDecoration: 'none', color: "white" }}>
                                 Projects
                                 </Link>
-                            <Link to="/contact" className={classes.navText}>
+                            <Link to="/contact" className={classes.navText} style={{ textDecoration: 'none', color: "white" }}>
                                 Contact
                                 </Link>
                         </Grid>
