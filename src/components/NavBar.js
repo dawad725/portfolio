@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     },
     appBar: {
         backgroundColor: "#0B6AB0",
-        // boxShadow: "none",
+        boxShadow: "none",
     },
     menuButtonContainer: {
         marginRight: "auto",

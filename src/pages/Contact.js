@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     },
     formContainer: {
         textAlign: "center",
-        backgroundColor: "#0B6AB0",
+        // backgroundColor: "#0B6AB0",
         padding: "3em",
         marginTop: "5em",
         [theme.breakpoints.only("xs")]: {
@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     },
     labels: {
         float: "left",
-        color: "white"
+        color: "black"
     },
 
     imageContainer: {
