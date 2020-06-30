@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         // boxShadow: "none",
     },
     menuButtonContainer: {
-        marginLeft: "auto",
+        marginRight: "auto",
         [theme.breakpoints.up('md')]: {
             display: 'none',
         },
