@@ -88,7 +88,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: "30px",
         marginLeft: "2.5em",
         marginBottom: "1em",
-        color: "#233768",
+        color: "black",
         textAlign: "left",
         [theme.breakpoints.only("xs")]: {
             fontSize: "20px",
@@ -182,10 +182,7 @@ export default function Contact() {
                 <Grid spacing={1} container >
                     <Grid item xs={12}>
                         <Typography className={classes.text}>
-                            Interested in working together?
-                        </Typography>
-                        <Typography className={classes.text}>
-                            Drop me a line.
+                            Interested in working together?  Drop me a line.
                         </Typography>
                     </Grid>
                 </Grid>
