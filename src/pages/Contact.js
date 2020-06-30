@@ -45,7 +45,6 @@ const useStyles = makeStyles(theme => ({
     },
     button: {
         marginTop: "1em",
-        backgroundColor: ""
     },
     labels: {
         float: "left",
@@ -233,7 +232,7 @@ export default function Contact() {
                             <Grid item xs={12} className={classes.button}>
                                 <Button
                                     className={classes.button}
-                                    color="primary"
+                                    style={{ backgroundColor: "#0B6AB0", color: "white" }}
                                     type="submit"
                                     variant="contained"
                                     onClick={addItem}
