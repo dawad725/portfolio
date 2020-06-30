@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         // backgroundColor: "#0B6AB0",
         padding: "3em",
-        marginTop: "5em",
+        marginTop: "2em",
         [theme.breakpoints.only("xs")]: {
             padding: "1em",
             marginTop: "2em",
