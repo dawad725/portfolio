@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold",
         paddingRight: "25px",
         '&:hover': {
-            color: "#90cbd9 !important",
+            // color: "#90cbd9 !important",
+            color: "#2188A0 !important",
         },
     },
 
@@ -35,7 +36,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold",
         paddingLeft: "10px",
         '&:hover': {
-            color: "#90cbd9 !important",
+            // color: "#90cbd9 !important",
+            color: "#2188A0 !important",
         },
     },
     appBar: {
