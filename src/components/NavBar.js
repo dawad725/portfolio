@@ -76,7 +76,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     iconButton: {
-        marginRight: "5px"
+        marginRight: "5px",
+        color: "#4A4A4A",
     }
 }));
 
