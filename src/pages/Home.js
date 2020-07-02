@@ -56,6 +56,7 @@ const useStyles = makeStyles(theme => ({
     name: {
         fontSize: "60px",
         fontWeight: "bold",
+        color: "#4A4A4A",
         [theme.breakpoints.only("xs")]: {
             fontSize: "40px"
         },
@@ -88,7 +89,7 @@ export default function Home() {
                                     Dave Awad
                                 </Typography>
                                 <br></br>
-                                <Typography variant="h5">
+                                <Typography variant="h5" style={{ color: "#4A4A4A" }}>
                                     Software Engineer
                                 </Typography>
                                 <div className={classes.buttonContainer}>

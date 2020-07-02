@@ -15,7 +15,8 @@ const useStyles = makeStyles(theme => ({
     },
     pageBanner: {
         textAlign: "center",
-        marginTop: "2.5em"
+        marginTop: "2.5em",
+        color: "#4A4A4A"
     },
     picture: {
         marginLeft: "3em",
@@ -44,6 +45,7 @@ const useStyles = makeStyles(theme => ({
     text: {
         fontSize: "16px",
         marginBottom: "1em",
+        color: "#4A4A4A",
         [theme.breakpoints.only("xs")]: {
             textAlign: "center",
         },
@@ -60,6 +62,7 @@ const useStyles = makeStyles(theme => ({
         marginBottom: "2em",
         marginTop: "1em",
         textAlign: "center",
+        color: "#4A4A4A",
         [theme.breakpoints.only("xs")]: {
             textAlign: "center",
             marginTop: "4em"

@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
     },
     pageBanner: {
+        color: "#4A4A4A",
         textAlign: "center",
         marginTop: "2.5em",
         marginBottom: "3em"

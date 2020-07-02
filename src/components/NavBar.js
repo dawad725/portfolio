@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     homeText: {
-        color: "white",
+        color: "#4A4A4A",
         textDecoration: "none",
         fontWeight: "bold",
         paddingLeft: "10px",
@@ -39,7 +39,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     appBar: {
-        backgroundColor: "#0B6AB0",
+        // backgroundColor: "#0B6AB0",
+        background: "none"
         // boxShadow: "none",
     },
     menuButtonContainer: {
@@ -56,7 +57,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     navbarLink: {
-        color: "#0B6AB0",
+        // color: "#0B6AB0",
+        color: "#4A4A4A",
         textDecoration: "none",
         fontWeight: "bold",
         paddingLeft: "10px",
@@ -112,7 +114,7 @@ export default function Navbar() {
                     <Grid container>
 
                         <Grid item className={classes.homeButton} >
-                            <Link to="/" className={classes.homeText} style={{ textDecoration: 'none', color: "white" }}>
+                            <Link to="/" className={classes.homeText} style={{ textDecoration: 'none', color: "#4A4A4A" }}>
                                 Home
                             </Link>
                         </Grid>
@@ -153,13 +155,13 @@ export default function Navbar() {
                         </Grid>
 
                         <Grid item className={classes.navButtonContainer}>
-                            <Link to="/about" className={classes.navText} style={{ textDecoration: 'none', color: "white" }}>
+                            <Link to="/about" className={classes.navText} style={{ textDecoration: 'none', color: "#4A4A4A" }}>
                                 About
                                 </Link>
-                            <Link to="/projects" className={classes.navText} style={{ textDecoration: 'none', color: "white" }}>
+                            <Link to="/projects" className={classes.navText} style={{ textDecoration: 'none', color: "#4A4A4A" }}>
                                 Projects
                                 </Link>
-                            <Link to="/contact" className={classes.navText} style={{ textDecoration: 'none', color: "white" }}>
+                            <Link to="/contact" className={classes.navText} style={{ textDecoration: 'none', color: "#4A4A4A" }}>
                                 Contact
                                 </Link>
                         </Grid>

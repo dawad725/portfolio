@@ -17,7 +17,8 @@ const useStyles = makeStyles(theme => ({
     pageBanner: {
         textAlign: "center",
         marginTop: "2.5em",
-        marginBottom: "3em"
+        marginBottom: "3em",
+        color: "#4A4A4A",
     },
     formContainer: {
         textAlign: "center",
@@ -48,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     },
     labels: {
         float: "left",
-        color: "black"
+        color: "#4A4A4A",
     },
 
     imageContainer: {
@@ -87,7 +88,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: "30px",
         marginLeft: "2.5em",
         marginBottom: "1em",
-        color: "black",
+        color: "#4A4A4A",
         textAlign: "left",
         [theme.breakpoints.only("xs")]: {
             fontSize: "20px",
