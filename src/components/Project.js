@@ -12,7 +12,7 @@ export default function Project({ border, bg, title, text, image, href_app, href
         }
     }
     return (
-        <Card border={border} bg={bg}>
+        <Card style={{ borderColor: "#868686" }} bg={bg}>
             <Card.Header as="h5">
                 {title}
             </Card.Header>
