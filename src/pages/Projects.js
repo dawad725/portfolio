@@ -9,10 +9,11 @@ import CardDeck from 'react-bootstrap/CardDeck';
 // Screen shots of the applications 
 import illuminate from '../images/illuminate.png'
 import weatherApp from '../images/weather.png'
-import portfolio from '../images/portfolio.png'
+// import portfolio from '../images/portfolio.png'
 import medline from '../images/Medline.png'
 import mockup from '../images/mockup.png'
 import youtube from '../images/youtube.png'
+import excel from '../images/excel.png'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -56,9 +57,9 @@ export default function Projects() {
                         text={'Illuminate helps consumers understand the approximate savings potential they will see by upgrading their current lighting in their home to energy efficient LED lighting.'}
                         stack={'React | Redux | HTML | CSS | Express | Node.js | MongoDB | Bootstrap | Heroku'} href_code={'https://github.com/dawad725/illuminate'}
                     />
-                    <Project title={"Dave's Weather Station"} image={weatherApp} bg={'light'} href_app={'https://daves-weather-station.herokuapp.com/'}
-                        text={"This fun app allows a user to check the weather by zip code or city. It also gives you the option to see the five day forecast for that area."}
-                        stack={'React | Material UI | HTML | CSS | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
+                    <Project title={"Excel Sheet Cleaner"} image={excel} bg={'light'} href_app={null}
+                        text={"This CLI application allows a user to upload an excel sheet to be cleaned. When its finished running you will get two tables in the console to show the rows with errors and the rows that were cleaned. You will also get two new excel sheets within the same directory. One 'cleaned' and one with 'errors'. "}
+                        stack={'Node.js | CSV-Parser | CSV |'} href_code={'https://github.com/dawad725/excel-data-cleaner'}
                     />
                     <Project title={"Medline.io"} image={medline} bg={'light'} href_app={'https://www.medline.io/'}
                         text={"This is a platform that I'm currently volunteering on with a remote team to match medical supply companies to frontline workers in need of PPE while fighting the COVID-19 pandemic."}
@@ -68,19 +69,29 @@ export default function Projects() {
                 </CardDeck>
 
                 <CardDeck className={classes.cards}>
+
+                    <Project title={"Dave's Weather Station"} image={weatherApp} bg={'light'} href_app={'https://daves-weather-station.herokuapp.com/'}
+                        text={"This fun app allows a user to check the weather by zip code or city. It also gives you the option to see the five day forecast for that area."}
+                        stack={'React | Material UI | HTML | CSS | Express | Node.js | Heroku |'} href_code={'https://github.com/dawad725/react-weather'}
+                    />
+
                     <Project title={"Dave-Tube"} image={youtube} bg={'light'} href_app={null}
                         text={"This is a smaller version of youtube that I built using backbone.js as a framework."}
                         stack={'Backbone.js | HTML | CSS | Bootstrap '} href_code={'https://github.com/dawad725/backbone-youtube'}
                     />
-                    <Project title={"My Portfolio Site"} image={portfolio} bg={'light'} href_app={'https://daveawad.com'}
-                        text={"That's right, this site you're perusing is no template. Check out the code and let me know what you think :)"}
-                        stack={'React | Material UI | React Bootstrap | HTML | CSS | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
-                    />
+
                     <Project title={"Mockup page"} image={mockup} bg={'light'} href_app={'https://dawad725.github.io/mockup/'}
                         text={"This is an HTML page I created based on a given mockup to work from."}
                         stack={'HTML | CSS | Bootstrap | GH Pages'} href_code={'https://github.com/dawad725/mockup'}
                     />
                 </CardDeck>
+
+                {/* <CardDeck className={classes.cards}>
+                    <Project title={"My Portfolio Site"} image={portfolio} bg={'light'} href_app={'https://daveawad.com'}
+                        text={"That's right, this site you're perusing is no template. Check out the code and let me know what you think :)"}
+                        stack={'React | Material UI | React Bootstrap | HTML | CSS | Netlify'} href_code={'https://github.com/dawad725/portfolio'}
+                    />
+                </CardDeck> */}
 
                 <Footer />
 
