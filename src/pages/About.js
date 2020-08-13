@@ -146,6 +146,7 @@ export default function About() {
                                     <Chip className={classes.chip} label="VS Code" style={{ backgroundColor: 'green', color: 'white' }} />
                                     <Chip className={classes.chip} label="Postman" style={{ backgroundColor: 'green', color: 'white' }} />
                                     <Chip className={classes.chip} label="Swagger" style={{ backgroundColor: 'green', color: 'white' }} />
+                                    <Chip className={classes.chip} label="Webpack" style={{ backgroundColor: 'green', color: 'white' }} />
                                 </div>
                             </div>
                         </Grid>
